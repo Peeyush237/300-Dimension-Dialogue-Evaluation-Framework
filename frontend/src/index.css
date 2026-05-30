@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600&display=swap');
+
 :root {
   --accent: #ff2b2b;
-  --text-primary: #0c0c0c;
-  --text-muted: #6b6b6b;
-  --surface: #f7f7f7;
-  --border: #d7d7d7;
-  --font-display: "Oswald", "Bebas Neue", "Impact", "Haettenschweiler", sans-serif;
+  --text-primary: #0b0b0b;
+  --text-muted: #5d5d5d;
+  --surface: #f6f6f6;
+  --border: #d4d4d4;
+  --font-display: "Bebas Neue", "Oswald", "Impact", sans-serif;
   --font-body: "Space Grotesk", "Futura", "Trebuchet MS", sans-serif;
 
   font: 16px/1.6 var(--font-body);
@@ -26,12 +28,11 @@ body {
 }
 
 #root {
-  width: min(1200px, 100%);
-  margin: 0 auto;
-  border-inline: 1px solid var(--border);
+  width: 100%;
   min-height: 100svh;
   background: #efefef;
   position: relative;
+  overflow: hidden;
 }
 
 #root::before {
