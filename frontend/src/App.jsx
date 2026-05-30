@@ -93,6 +93,20 @@ function csvEscape(value) {
   return stringValue
 }
 
+function sortFacetScores(rows) {
+  return [...rows].sort((a, b) => {
+    const aScored = typeof a.score === 'number'
+    const bScored = typeof b.score === 'number'
+    if (aScored !== bScored) {
+      return aScored ? -1 : 1
+    }
+    if (aScored && bScored && a.score !== b.score) {
+      return b.score - a.score
+    }
+    return a.facet_name.localeCompare(b.facet_name)
+  })
+}
+
 function buildCsv(rows) {
   const header = ['facet_name', 'category', 'score', 'confidence', 'reason', 'scoreable']
   const lines = [header.join(',')]
@@ -122,6 +136,7 @@ function App() {
   const [isDragging, setIsDragging] = useState(false)
 
   const activeScores = result?.scores?.length ? result.scores : demoScores
+  const sortedScores = useMemo(() => sortFacetScores(activeScores), [activeScores])
   const scoredFacets = activeScores.filter((row) => typeof row.score === 'number')
 
   const summary = useMemo(() => {
@@ -181,7 +196,7 @@ function App() {
       setError('Run an evaluation before downloading the report.')
       return
     }
-    const csv = buildCsv(result.scores)
+    const csv = buildCsv(sortFacetScores(result.scores))
     const blob = new Blob([csv], { type: 'text/csv' })
     const url = URL.createObjectURL(blob)
     const anchor = document.createElement('a')
@@ -460,7 +475,7 @@ function App() {
                 <span>Reason</span>
               </div>
               <div className="results-table">
-                {activeScores.map((row) => (
+                {sortedScores.map((row) => (
                   <div key={row.facet_name} className="result-row">
                     <div>
                       <div className="facet-name">{row.facet_name}</div>
