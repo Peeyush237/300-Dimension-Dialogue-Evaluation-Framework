@@ -1,0 +1,400 @@
+Facets,facet_name_clean,category,scoreable,evaluation_difficulty,requires_full_context,score_anchor_low,score_anchor_high,cluster_id
+Risktaking,Risktaking,other,False,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Naivety,Naivety,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Acidity,Acidity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Democratic Leadership:,Democratic Leadership,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",5
+Common-sense,Common-sense,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Hesitation,Hesitation,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",10
+Discontentment,Discontentment,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Overprotectiveness,Overprotectiveness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Merriness,Merriness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Emotionalism,Emotionalism,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Self-improvement,Self-improvement,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Statistical Reasoning,Statistical Reasoning,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",7
+Assertiveness and control in relationships,Assertiveness and control in relationships,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+Cunningness,Cunningness,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",3
+Adventure-Seeking Behavior,Adventure-Seeking Behavior,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Compassion Fatigue,Compassion Fatigue,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",14
+Moroseness,Moroseness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,4
+Specialist,Specialist,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Aloofness,Aloofness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Genuine,Genuine,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Determinedness,Determinedness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",0
+HonestyHumility:,HonestyHumility,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Relationship Building Themes:,Relationship Building Themes,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+Pure Challenge,Pure Challenge,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Numerical Reasoning Subcomponents:,Numerical Reasoning Subcomponents,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",7
+Openness,Openness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+SelfEsteem,SelfEsteem,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Comparing alphanumeric data,Comparing alphanumeric data,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Big-heartedness,Big-heartedness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Compulsive activities,Compulsive activities,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Disrespect,Disrespect,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+FSH level,FSH level,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Self Perspective,Self Perspective,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Desperation,Desperation,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Affiliation Motivation:,Affiliation Motivation,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",3
+Anatomy knowledge,Anatomy knowledge,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Passive-Aggressive,Passive-Aggressive,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",5
+Presence of Spiritual Pain,Presence of Spiritual Pain,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Role of Spirituality in Community Involvement,Role of Spirituality in Community Involvement,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Structure,Structure,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",0
+Eco-tourism trips,Eco-tourism trips,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Chivalrousness,Chivalrousness,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",4
+Pilgrimage participation count,Pilgrimage participation count,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Mindfulness facet: Observing,Mindfulness facet: Observing,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Submissiveness,Submissiveness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",1
+Training-cycle length,Training-cycle length,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Sensitiveness,Sensitiveness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Negative Affect Frequency,Negative Affect Frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Innovation and Creativity Components:,Innovation and Creativity Components,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Achievement Motivation:,Achievement Motivation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Feedback-giving frequency,Feedback-giving frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Dance-cardio sessions,Dance-cardio sessions,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Enthusiasm,Enthusiasm,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",10
+Psychological construct: Social Desirability tendency,Psychological construct: Social Desirability tendency,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Inattentiveness,Inattentiveness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Unassertiveness,Unassertiveness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+Decision-making decisiveness,Decision-making decisiveness,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",10
+Sense-of-coherence score,Sense-of-coherence score,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Justice-mindedness,Justice-mindedness,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",3
+Subscription count,Subscription count,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Depression Symptoms,Depression Symptoms,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Spatial perception,Spatial perception,other,False,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Brevity,Brevity,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",4
+Orderliness,Orderliness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+Multiculturalism,Multiculturalism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Creative risk-taking tendency,Creative risk-taking tendency,personality,False,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",-1
+Inefficiency,Inefficiency,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Network basics,Network basics,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,7
+Alphabetical filing skills,Alphabetical filing skills,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",13
+Work Styles,Work Styles,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Character strength: Perseverance,Character strength: Perseverance,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",3
+Competition,Competition,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Logical Sequence Identification,Logical Sequence Identification,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",0
+Sustainable-transport usage,Sustainable-transport usage,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Hardworking,Hardworking,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Emotional-intelligence measure: Impulsiveness,Emotional-intelligence measure: Impulsiveness,emotion,False,hard,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,-1
+Dishonesty,Dishonesty,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",3
+Preferred epistemology,Preferred epistemology,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",0
+Memory for Sounds,Memory for Sounds,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Sportsmanship rating,Sportsmanship rating,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",10
+Immaturity,Immaturity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Health-literacy level,Health-literacy level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Estimating Calculations,Estimating Calculations,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Depression: Feelings of sadness and hopelessness,Depression: Feelings of sadness and hopelessness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,14
+Synthesis of information,Synthesis of information,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",13
+Leadership Potential:,Leadership Potential,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",10
+Ethical standards,Ethical standards,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+High-spiritedness,High-spiritedness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,3
+Critical reasoning,Critical reasoning,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",0
+Sleep-disorder diagnosis,Sleep-disorder diagnosis,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Listening Skills Subcomponents:,Listening Skills Subcomponents,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",12
+Collaboration,Collaboration,social,True,medium,True,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",10
+Precision of Movements,Precision of Movements,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",11
+Social Boldness,Social Boldness,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Auditory memory,Auditory memory,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",12
+Psychomotor Ability Subcomponents:,Psychomotor Ability Subcomponents,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Organized lifestyle,Organized lifestyle,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Skill-endorsements count,Skill-endorsements count,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Mysteriousness,Mysteriousness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Cultural Identity,Cultural Identity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,2
+Intrinsic Motivation,Intrinsic Motivation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Impartial-mindedness,Impartial-mindedness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",3
+Burnout Symptoms,Burnout Symptoms,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,14
+Holiness,Holiness,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Selfcontrol,Selfcontrol,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",3
+SelfDirectedness,SelfDirectedness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Encouraging participation,Encouraging participation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Impracticalness,Impracticalness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Meeting Deadlines,Meeting Deadlines,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Data Analysis,Data Analysis,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",13
+Social Interaction Skills,Social Interaction Skills,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Psychoticism,Psychoticism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Ethical leadership rating,Ethical leadership rating,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+Slothfulness,Slothfulness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Happiness,Happiness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Contentment Levels,Contentment Levels,emotion,True,medium,True,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,13
+Neuroticism,Neuroticism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Desire for excellence,Desire for excellence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Perceiving,Perceiving,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",0
+Liberalism,Liberalism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Inversion comfort level,Inversion comfort level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Affection,Affection,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Numeric Filing Skills,Numeric Filing Skills,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Martyrdom,Martyrdom,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Parathyroid-hormone level,Parathyroid-hormone level,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Seeking approval,Seeking approval,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Judging (J):,Judging (J),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Big Five facet Openness – Artistic Interests,Big Five facet Openness – Artistic Interests,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+Psychological construct: Operant-Learning rate,Psychological construct: Operant-Learning rate,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Psychological construct: Need for Achievement level,Psychological construct: Need for Achievement level,cognitive,True,medium,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Cantankerousness,Cantankerousness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Material properties knowledge,Material properties knowledge,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Hostility,Hostility,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",5
+Independence,Independence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+800. Sufi practice: Sufi retreat attendance count,Sufi practice: Sufi retreat attendance count,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Chromatin-accessibility score,Chromatin-accessibility score,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+644. Spiritual virtue: Humility practice index,Spiritual virtue: Humility practice index,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+754. I Ching hexagram 36 resonance level,I Ching hexagram 36 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Well-being component: Engagement,Well-being component: Engagement,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Need for social interaction,Need for social interaction,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Peer-collaboration hours,Peer-collaboration hours,social,True,medium,True,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",8
+Arts and Humanities,Arts and Humanities,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+596. Religious practice: Quran khatam cycles per year,Religious practice: Quran khatam cycles per year,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+926. Bahá’í spiritual metric: Ridván festival participation,Bahá’í spiritual metric: Ridván festival participation,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Compassion,Compassion,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",3
+Information Retention,Information Retention,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,12
+Eye-contact duration,Eye-contact duration,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Self-righteousness,Self-righteousness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+General Mood and Attitude,General Mood and Attitude,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Serotonin transporter availability,Serotonin transporter availability,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Contribution to Group Goals,Contribution to Group Goals,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Dignity,Dignity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+HEXACO Personality Inventory Facets:,HEXACO Personality Inventory Facets,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Evaluating Solutions,Evaluating Solutions,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Input,Input,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Discreteness,Discreteness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+607. Energy-healing practice: Reiki sessions / year,Energy-healing practice: Reiki sessions / year,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+692. Astrology: Rising sign is Scorpio,Astrology: Rising sign is Scorpio,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,2
+Character strength: Social Intelligence,Character strength: Social Intelligence,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Bravery,Bravery,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Childhood Experiences,Childhood Experiences,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Data-sharing consent level,Data-sharing consent level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Vision-check frequency,Vision-check frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Physical-violence exposure,Physical-violence exposure,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Macronutrient ratio: fat,Macronutrient ratio: fat,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,6
+Cooking and Culinary Arts,Cooking and Culinary Arts,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Language use,Language use,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",0
+Dance-style mastery diversity,Dance-style mastery diversity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Satya Adherence,Satya Adherence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Ethnocentrism,Ethnocentrism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Emotional Boundaries,Emotional Boundaries,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,1
+Creativity in solutions,Creativity in solutions,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Psychological construct: Hope scale,Psychological construct: Hope scale,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",14
+565. Practice frequency: Walking meditation,Practice frequency: Walking meditation,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Depression (DEP),Depression (DEP),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Understanding Mathematical Concepts,Understanding Mathematical Concepts,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,7
+Hypomania (Ma),Hypomania (Ma),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Goal-Directed Behavior,Goal-Directed Behavior,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Depth of Emotional Connections,Depth of Emotional Connections,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,2
+Binding foundations index,Binding foundations index,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Ego Dissolution Frequency,Ego Dissolution Frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Activator: Turning thoughts into action,Activator: Turning thoughts into action,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+967. Gnostic spiritual metric: Archon meditation frequency,Gnostic spiritual metric: Archon meditation frequency,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Exemplariness,Exemplariness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Moral and Ethical Parameters:,Moral and Ethical Parameters,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Submission:,Submission,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Frankness,Frankness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Psychological construct: Psychological Safety climate,Psychological construct: Psychological Safety climate,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",14
+Psychological construct: Self-Compassion total,Psychological construct: Self-Compassion total,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",3
+Psychological construct: Executive-Function composite,Psychological construct: Executive-Function composite,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Rebelliousness,Rebelliousness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Volunteer Work,Volunteer Work,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Intellect,Intellect,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,2
+Use of Mathematical Formulas,Use of Mathematical Formulas,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,7
+Coarseness,Coarseness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Behavioral Tendencies and Subcomponents:,Behavioral Tendencies and Subcomponents,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Sensitivity,Sensitivity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Divided Attention Ability,Divided Attention Ability,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Psychological construct: Acculturative Stress score,Psychological construct: Acculturative Stress score,cognitive,True,medium,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",14
+Dauntlessness,Dauntlessness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Concreteness,Concreteness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Hysteria (Hy),Hysteria (Hy),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+911. Jewish spiritual metric: Sukkot lulav-shaking days,Jewish spiritual metric: Sukkot lulav-shaking days,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Sentence Structure,Sentence Structure,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",0
+Esteem Needs,Esteem Needs,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Understanding mechanical concepts,Understanding mechanical concepts,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,7
+Auditory Memory Recall,Auditory Memory Recall,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",12
+Storytelling proficiency,Storytelling proficiency,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Music-lessons years,Music-lessons years,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Warmheartedness,Warmheartedness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Self-effacement,Self-effacement,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Outspokenness,Outspokenness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Sleep-environment temperature,Sleep-environment temperature,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Comprehension of spoken information,Comprehension of spoken information,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,12
+Blissfulness,Blissfulness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Sequential Memory Recall,Sequential Memory Recall,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",12
+Withdrawnness,Withdrawnness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+892. Hindu spiritual metric: Yoga discipline hours / week,Hindu spiritual metric: Yoga discipline hours / week,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Conservatism,Conservatism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Adaptability and Flexibility Subcomponents:,Adaptability and Flexibility Subcomponents,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+898. Hindu spiritual metric: Vrata vows observed / year,Hindu spiritual metric: Vrata vows observed / year,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Ardency,Ardency,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Aesthetic Appreciation,Aesthetic Appreciation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Transactional Leadership:,Transactional Leadership,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+Value orientation: Universalism,Value orientation: Universalism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Perseverance,Perseverance,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",3
+Regularity of Self-Reflection,Regularity of Self-Reflection,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Controlling Reactions,Controlling Reactions,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Psychological construct: Cultural Intelligence – Behavioral,Psychological construct: Cultural Intelligence – Behavioral,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",2
+Metabolic Rate (Low or High),Metabolic Rate (Low or High),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,6
+Dietary Habits,Dietary Habits,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,6
+Significance: Desire to make an impact,Significance: Desire to make an impact,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Psychological construct: Resilience-Trait score,Psychological construct: Resilience-Trait score,cognitive,True,medium,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",14
+Boredom Susceptibility,Boredom Susceptibility,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Psychological construct: Consummatory Pleasure scale,Psychological construct: Consummatory Pleasure scale,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Leadership Styles and Behaviors:,Leadership Styles and Behaviors,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",13
+723. I Ching hexagram 5 resonance level,I Ching hexagram 5 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Macronutrient ratio: carbs,Macronutrient ratio: carbs,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,6
+Passport-stamps count,Passport-stamps count,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Local-food sourcing %,Local-food sourcing %,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,6
+Patient care orientation,Patient care orientation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Soft-skill training hours,Soft-skill training hours,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Graffiti appreciation,Graffiti appreciation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Preference for Home-Cooked vs Restaurant Meals,Preference for Home-Cooked vs Restaurant Meals,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Immune-response age,Immune-response age,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Social-cognition variable: Cognitive Empathy,Social-cognition variable: Cognitive Empathy,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Kink-interest diversity,Kink-interest diversity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Adaptability and Flexibility:,Adaptability and Flexibility,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Judging Consequences,Judging Consequences,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Harmfulness,Harmfulness,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",5
+Affinity,Affinity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Abasement,Abasement,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Chronic pain presence,Chronic pain presence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+520. Discernment practice hours / week,Discernment practice hours / week,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Initiative,Initiative,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Courageousness,Courageousness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Joyfulness,Joyfulness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,3
+Suspicion,Suspicion,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Basophil count,Basophil count,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Attachment avoidance score,Attachment avoidance score,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Time Orientation End Points:,Time Orientation End Points,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Brazenness,Brazenness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Talkativeness,Talkativeness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Equitableness,Equitableness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Ideas generated/day,Ideas generated/day,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Originality,Originality,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Fearfulness: Fear of physical dangers,Fearfulness: Fear of physical dangers,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Dance rehearsal hours/week,Dance rehearsal hours/week,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+561. Practice frequency: Mantra meditation,Practice frequency: Mantra meditation,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Public-transport km/week,Public-transport km/week,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Social Desirability Bias,Social Desirability Bias,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+761. I Ching hexagram 43 resonance level,I Ching hexagram 43 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Disagreeableness,Disagreeableness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Participation in Community Activities,Participation in Community Activities,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",10
+Impudence,Impudence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Analogies,Analogies,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,7
+Clumsiness,Clumsiness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Tendency Toward Compromise or Confrontation,Tendency Toward Compromise or Confrontation,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+737. I Ching hexagram 19 resonance level,I Ching hexagram 19 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Robotics-interaction frequency,Robotics-interaction frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Casual lifestyle,Casual lifestyle,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Collectedness,Collectedness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Reliance on context,Reliance on context,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Delegation skills,Delegation skills,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+767. I Ching hexagram 49 resonance level,I Ching hexagram 49 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Managing emotions,Managing emotions,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Scripture memorization verses,Scripture memorization verses,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,12
+Conventional,Conventional,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+890. Hindu spiritual metric: Bhagavad-Gita study hours,Hindu spiritual metric: Bhagavad-Gita study hours,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Open-source contributions,Open-source contributions,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Psychological construct: Social Conformity tendency,Psychological construct: Social Conformity tendency,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Individuality,Individuality,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+740. I Ching hexagram 22 resonance level,I Ching hexagram 22 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Attachment style: Secure,Attachment style: Secure,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Intelligence Quotient (IQ),Intelligence Quotient (IQ),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,11
+Blog-subscriber count,Blog-subscriber count,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Non-Verbal Communication Skills,Non-Verbal Communication Skills,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",12
+Drug-use history,Drug-use history,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Commute time/day,Commute time/day,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Decision-making speed,Decision-making speed,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",11
+Psychological construct: Excuse-Making tendency,Psychological construct: Excuse-Making tendency,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Peer-to-peer lending usage,Peer-to-peer lending usage,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Psychological construct: Eye-Contact avoidance score,Psychological construct: Eye-Contact avoidance score,cognitive,True,medium,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Social-cognition variable: Faux Pas Recognition accuracy,Social-cognition variable: Faux Pas Recognition accuracy,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",2
+Conscientiousness (C):,Conscientiousness (C),other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Use of Nature as a Stress Reliever,Use of Nature as a Stress Reliever,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Attitude toward learning,Attitude toward learning,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Conscientiousness Facets:,Conscientiousness Facets,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Honesty-humility trait score,Honesty-humility trait score,other,True,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Digital-nomad months,Digital-nomad months,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+516. Religious coping – Negative,Religious coping – Negative,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Snacking Behavior,Snacking Behavior,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Aura-color perception,Aura-color perception,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+638. Sacred text engagement: Zohar (Kabbalah) study hours,Sacred text engagement: Zohar (Kabbalah) study hours,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Motivational Drivers:,Motivational Drivers,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Cloud-backup frequency,Cloud-backup frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Learning Style,Learning Style,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+872. Islamic practice: Seerah study hours,Islamic practice: Seerah study hours,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,8
+Safety compliance,Safety compliance,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",1
+Sensationalism,Sensationalism,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",4
+Nationality,Nationality,other,False,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Drollness,Drollness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Cooperation,Cooperation,social,True,medium,True,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",10
+Breakfast-skipping frequency,Breakfast-skipping frequency,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+922. Sikh spiritual metric: Kirtan participation frequency,Sikh spiritual metric: Kirtan participation frequency,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Impulsivity,Impulsivity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,9
+Museum visits/year,Museum visits/year,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Choir participation years,Choir participation years,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Delegation Ability,Delegation Ability,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",1
+788. Kabbalah sephira balance: Tiferet,Kabbalah sephira balance: Tiferet,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Desire to influence others,Desire to influence others,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Vivacity,Vivacity,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",5
+Genialness,Genialness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Cognitive measure: Working Memory Index,Cognitive measure: Working Memory Index,cognitive,False,hard,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",-1
+Ethical practices,Ethical practices,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+945. New-Age spiritual metric: Channeling sessions / year,New-Age spiritual metric: Channeling sessions / year,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Civility,Civility,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",5
+Sleep Apnea,Sleep Apnea,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Classiness,Classiness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Control over situations,Control over situations,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Time outdoors/day (h),Time outdoors/day (h),lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Effeteness,Effeteness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Polygenic risk: cardiovascular disease,Polygenic risk: cardiovascular disease,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Psychological construct: Identity Diffusion level,Psychological construct: Identity Diffusion level,cognitive,True,medium,True,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Learning through movement,Learning through movement,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+Caffeine sensitivity gene,Caffeine sensitivity gene,biological,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Hatefulness,Hatefulness,safety,True,easy,False,"shows harmful, deceptive, hostile, or unsafe behavior","is respectful, honest, and behaviorally safe",5
+Persistence:,Persistence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Psychological construct: Perfectionistic Strivings,Psychological construct: Perfectionistic Strivings,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",9
+Wake-time consistency,Wake-time consistency,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Numerical Reasoning:,Numerical Reasoning,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",7
+Social-cognition variable: Mentalizing network activation,Social-cognition variable: Mentalizing network activation,social,False,hard,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",-1
+Patriotism,Patriotism,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",5
+Leadership Styles:,Leadership Styles,social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",13
+Servility,Servility,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+742. I Ching hexagram 24 resonance level,I Ching hexagram 24 resonance level,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
+Enneagram Personality Types:,Enneagram Personality Types,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,2
+Stress Recovery Ability,Stress Recovery Ability,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Troubleshooting technical issues,Troubleshooting technical issues,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",8
+Defense-mechanism tendency: Introjection,Defense-mechanism tendency: Introjection,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Irritability,Irritability,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Travel-companions diversity,Travel-companions diversity,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+627. Sacred text engagement: Quran surahs memorized,Sacred text engagement: Quran surahs memorized,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Trust in others,Trust in others,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,1
+Gamified-finance-app usage,Gamified-finance-app usage,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+823. Buddhist practice: Eightfold Path – Right Intention level,Buddhist practice: Eightfold Path – Right Intention level,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Caffeine intake (mg/day),Caffeine intake (mg/day),lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Comfort with Vulnerability,Comfort with Vulnerability,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Anticipativeness,Anticipativeness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Additional Common Parameters and Their End Points:,Additional Common Parameters and Their End Points,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Avoiding:,Avoiding,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,10
+Home-security-system presence,Home-security-system presence,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+HEXACO domain: Honesty-Humility,HEXACO domain: Honesty-Humility,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Eating Habits (Home-Cooked vs. Eating Out),Eating Habits (Home-Cooked vs. Eating Out),lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Decision-Making Confidence,Decision-Making Confidence,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",10
+Alignment with societal roles,Alignment with societal roles,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,2
+Connectedness: Belief in interconnections,Connectedness: Belief in interconnections,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,0
+Quirkiness,Quirkiness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+Creative resilience,Creative resilience,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,14
+Rapid cognitive processing,Rapid cognitive processing,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",11
+Cordiality,Cordiality,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Types of Mindfulness Techniques Used,Types of Mindfulness Techniques Used,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Economic reasoning,Economic reasoning,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",7
+Conformity,Conformity,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Pet-enrichment activities count,Pet-enrichment activities count,lifestyle,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Aestheticism,Aestheticism,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Type of Support Preferred (Emotional vs. Practical),Type of Support Preferred (Emotional vs. Practical),social,True,medium,False,"shows little cooperation, civility, or social awareness","shows strong cooperation, civility, and social awareness",14
+Mental Arithmetic Speed,Mental Arithmetic Speed,cognitive,True,medium,False,"shows weak reasoning, organization, or analytical depth","shows strong reasoning, organization, and analytical depth",11
+Patience: Resistance to anger,Patience: Resistance to anger,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",5
+Flawlessness,Flawlessness,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,4
+Self-Efficacy,Self-Efficacy,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,3
+Computer Skills:,Computer Skills,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,13
+899. Jewish spiritual metric: Shabbat candle-lighting consistency,Jewish spiritual metric: Shabbat candle-lighting consistency,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Spelling Accuracy,Spelling Accuracy,linguistic,True,easy,False,shows frequent language or structure problems,"is clear, polished, and linguistically strong",11
+793. Sufi practice: Dhikr repetitions / day,Sufi practice: Dhikr repetitions / day,spiritual,False,hard,True,cannot be inferred from the conversation text,cannot be inferred from the conversation text,-1
+Peacefulness,Peacefulness,emotion,True,medium,False,shows little emotional expression or emotional relevance,shows strong and appropriate emotional expression,5
+Doggedness,Doggedness,personality,True,hard,False,shows little or no evidence of the trait in the conversation,"consistently shows strong, clear evidence of the trait in the conversation",4
+Decency,Decency,other,True,hard,False,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,5
+Processed-food frequency,Processed-food frequency,other,False,hard,True,shows little or no evidence of the facet in the conversation,shows strong evidence of the facet in the conversation,-1
