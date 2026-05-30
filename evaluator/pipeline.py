@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import asyncio
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 from evaluator.batch_evaluator import BatchEvaluator
+from evaluator.conversation_parser import ConversationParseError, parse_conversation_input
+from evaluator.conversation_validator import ConversationValidator
 from evaluator.facet_classifier import FacetClassifier, load_default_classifier
-from evaluator.models import EvaluationResult
+from evaluator.models import ConversationTurn, EvaluationResult
 from evaluator.output_aggregator import OutputAggregator
 
 
@@ -14,6 +16,7 @@ class EvaluationPipeline:
     def __init__(self, classifier: FacetClassifier | None = None) -> None:
         self.classifier = classifier or load_default_classifier()
         self.batch_evaluator = BatchEvaluator()
+        self.conversation_validator = ConversationValidator()
         self.aggregator = OutputAggregator(self.classifier.get_scoreable_metadata().assign(
             scoreable=True
         ))
@@ -27,7 +30,29 @@ class EvaluationPipeline:
         groups = self.classifier.get_cluster_groups()
         return {group.cluster_id: group.facets for group in groups}
 
-    async def evaluate(self, conversation_id: str, turns: List[Dict[str, str]]) -> EvaluationResult:
+    def resolve_turns(
+        self,
+        turns: List[ConversationTurn] | None,
+        raw_input: str | None,
+    ) -> Tuple[List[Dict[str, str]], str | None]:
+        if turns:
+            return [turn.model_dump() for turn in turns], None
+        if raw_input and raw_input.strip():
+            parsed = parse_conversation_input(raw_input)
+            return parsed.turns, parsed.conversation_id
+        raise ConversationParseError("Provide either turns or raw_input.")
+
+    async def validate_conversation(self, turns: List[Dict[str, str]]) -> None:
+        conversation_text = self._format_conversation(turns)
+        result = await self.conversation_validator.validate(turns, conversation_text)
+        self.conversation_validator.ensure_valid(result)
+
+    async def evaluate(
+        self,
+        conversation_id: str | None,
+        turns: List[Dict[str, str]],
+    ) -> EvaluationResult:
+        await self.validate_conversation(turns)
         conversation_text = self._format_conversation(turns)
         cluster_map = self._cluster_map()
         batch_results = await self.batch_evaluator.evaluate_clusters(conversation_text, cluster_map)
@@ -36,9 +61,14 @@ class EvaluationPipeline:
         ]
         full_facets = self.classifier._df.copy()
         aggregator = OutputAggregator(full_facets)
-        return aggregator.aggregate(conversation_id, batch_payloads)
+        resolved_id = conversation_id or f"eval-{abs(hash(conversation_text)) % 10**10}"
+        return aggregator.aggregate(resolved_id, batch_payloads)
 
-    def evaluate_sync(self, conversation_id: str, turns: List[Dict[str, str]]) -> EvaluationResult:
+    def evaluate_sync(
+        self,
+        conversation_id: str | None,
+        turns: List[Dict[str, str]],
+    ) -> EvaluationResult:
         return asyncio.run(self.evaluate(conversation_id, turns))
 
     def write_outputs(self, result: EvaluationResult, output_dir: Path) -> None:

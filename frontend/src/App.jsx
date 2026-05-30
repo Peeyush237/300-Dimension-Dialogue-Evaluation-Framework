@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { formatTurnPreview, parseConversationInput } from './conversationParser'
 import './App.css'
 
 const demoScores = [
@@ -62,27 +63,36 @@ assistant: We can cluster facets and score in batches.
 user: Can you show me the results?
 assistant: Here are the top facets with confidence scores.`
 
-const roleSet = new Set(['user', 'assistant', 'system'])
-
-function parseConversation(text) {
-  const turns = []
-  const lines = text.split('\n').map((line) => line.trim()).filter(Boolean)
-  for (const line of lines) {
-    const delimiterIndex = line.indexOf(':')
-    if (delimiterIndex === -1) {
-      return { turns: [], error: 'Each line must use "role: content" format.' }
+async function readApiError(response) {
+  const text = await response.text()
+  try {
+    const payload = JSON.parse(text)
+    if (typeof payload.detail === 'string') {
+      return payload.detail
     }
-    const role = line.slice(0, delimiterIndex).trim().toLowerCase()
-    const content = line.slice(delimiterIndex + 1).trim()
-    if (!roleSet.has(role)) {
-      return { turns: [], error: `Unknown role "${role}". Use user, assistant, or system.` }
+    if (Array.isArray(payload.detail)) {
+      return payload.detail.map((item) => item.msg || JSON.stringify(item)).join(' ')
     }
-    if (!content) {
-      return { turns: [], error: 'Every turn must have content after the role.' }
-    }
-    turns.push({ role, content })
+    return text || 'Request failed.'
+  } catch {
+    return text || 'Request failed.'
   }
-  return { turns, error: '' }
+}
+
+function createLoadedFile(name, rawText) {
+  const parsed = parseConversationInput(rawText)
+  return {
+    id: `${name}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    name,
+    rawText,
+    parsedTurns: parsed.turns,
+    parseError: parsed.error,
+    formatDetected: parsed.formatDetected,
+    conversationId: parsed.conversationId,
+    result: null,
+    status: parsed.error ? 'invalid' : 'ready',
+    error: parsed.error,
+  }
 }
 
 function csvEscape(value) {
@@ -127,15 +137,22 @@ function buildCsv(rows) {
 
 function App() {
   const evaluateShellRef = useRef(null)
+  const fileInputRef = useRef(null)
   const [page, setPage] = useState('home')
   const [inputText, setInputText] = useState(defaultConversation)
+  const [loadedFiles, setLoadedFiles] = useState([])
+  const [activeFileId, setActiveFileId] = useState(null)
+  const [batchProgress, setBatchProgress] = useState('')
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [splitPercent, setSplitPercent] = useState(50)
   const [isDragging, setIsDragging] = useState(false)
 
-  const activeScores = result?.scores?.length ? result.scores : demoScores
+  const inputPreview = useMemo(() => parseConversationInput(inputText), [inputText])
+  const activeFile = loadedFiles.find((file) => file.id === activeFileId) ?? null
+  const displayResult = activeFile?.result ?? result
+  const activeScores = displayResult?.scores?.length ? displayResult.scores : demoScores
   const sortedScores = useMemo(() => sortFacetScores(activeScores), [activeScores])
   const scoredFacets = activeScores.filter((row) => typeof row.score === 'number')
 
@@ -151,33 +168,40 @@ function App() {
     return { total, scoredCount, average, highest, lowest }
   }, [activeScores, scoredFacets])
 
+  const evaluateRawInput = async (rawText, conversationId) => {
+    const response = await fetch('/evaluate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        conversation_id: conversationId,
+        raw_input: rawText,
+      }),
+    })
+    if (!response.ok) {
+      throw new Error(await readApiError(response))
+    }
+    return response.json()
+  }
+
   const handleEvaluate = async () => {
     setError('')
-    const { turns, error: parseError } = parseConversation(inputText)
-    if (parseError) {
-      setError(parseError)
+    setBatchProgress('')
+    if (inputPreview.error) {
+      setError(inputPreview.error)
       return
     }
-    if (!turns.length) {
+    if (!inputPreview.turns.length) {
       setError('Please add at least one conversation turn.')
       return
     }
     setLoading(true)
     try {
-      const response = await fetch('/evaluate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          conversation_id: `ui-${Date.now()}`,
-          turns,
-        }),
-      })
-      if (!response.ok) {
-        const message = await response.text()
-        throw new Error(message || 'Evaluation failed.')
-      }
-      const data = await response.json()
+      const data = await evaluateRawInput(
+        inputText,
+        inputPreview.conversationId || `ui-${Date.now()}`
+      )
       setResult(data)
+      setActiveFileId(null)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unexpected error.')
     } finally {
@@ -185,23 +209,100 @@ function App() {
     }
   }
 
+  const handleEvaluateAll = async () => {
+    const queue = loadedFiles.filter((file) => file.status !== 'invalid')
+    if (!queue.length) {
+      setError('Upload at least one valid JSON conversation file.')
+      return
+    }
+    setError('')
+    setLoading(true)
+    let completed = 0
+    for (const file of queue) {
+      setBatchProgress(`Evaluating ${completed + 1}/${queue.length}: ${file.name}`)
+      setLoadedFiles((current) =>
+        current.map((item) =>
+          item.id === file.id ? { ...item, status: 'evaluating', error: '' } : item
+        )
+      )
+      try {
+        const data = await evaluateRawInput(file.rawText, file.conversationId || file.name)
+        setLoadedFiles((current) =>
+          current.map((item) =>
+            item.id === file.id
+              ? { ...item, status: 'done', result: data, error: '' }
+              : item
+          )
+        )
+        setActiveFileId(file.id)
+        setResult(null)
+      } catch (err) {
+        const message = err instanceof Error ? err.message : 'Unexpected error.'
+        setLoadedFiles((current) =>
+          current.map((item) =>
+            item.id === file.id ? { ...item, status: 'failed', error: message } : item
+          )
+        )
+      }
+      completed += 1
+    }
+    setBatchProgress(`Finished ${completed}/${queue.length} files.`)
+    setLoading(false)
+  }
+
+  const handleFileUpload = async (event) => {
+    const files = Array.from(event.target.files || [])
+    if (!files.length) {
+      return
+    }
+    setError('')
+    const additions = []
+    for (const file of files) {
+      const rawText = await file.text()
+      additions.push(createLoadedFile(file.name, rawText))
+    }
+    setLoadedFiles((current) => [...current, ...additions])
+    if (additions.length === 1) {
+      setInputText(additions[0].rawText)
+      setActiveFileId(additions[0].id)
+    } else if (additions.length > 1 && !activeFileId) {
+      setActiveFileId(additions[0].id)
+      setInputText(additions[0].rawText)
+    }
+    event.target.value = ''
+  }
+
+  const handleSelectLoadedFile = (fileId) => {
+    const selected = loadedFiles.find((file) => file.id === fileId)
+    if (!selected) {
+      return
+    }
+    setActiveFileId(fileId)
+    setInputText(selected.rawText)
+    setError(selected.error || '')
+  }
+
   const handleReset = () => {
     setInputText(defaultConversation)
     setResult(null)
+    setLoadedFiles([])
+    setActiveFileId(null)
+    setBatchProgress('')
     setError('')
   }
 
   const handleDownload = () => {
-    if (!result?.scores?.length) {
+    const exportResult = displayResult
+    if (!exportResult?.scores?.length) {
       setError('Run an evaluation before downloading the report.')
       return
     }
-    const csv = buildCsv(sortFacetScores(result.scores))
+    const csv = buildCsv(sortFacetScores(exportResult.scores))
     const blob = new Blob([csv], { type: 'text/csv' })
     const url = URL.createObjectURL(blob)
     const anchor = document.createElement('a')
     anchor.href = url
-    anchor.download = `${result.conversation_id || 'evaluation'}.csv`
+    anchor.download = `${exportResult.conversation_id || 'evaluation'}.csv`
     anchor.click()
     URL.revokeObjectURL(url)
   }
@@ -407,14 +508,83 @@ function App() {
             </div>
             <div className="console">
               <div className="console-input">
-                <label htmlFor="conversation">Conversation input</label>
+                <div className="input-toolbar">
+                  <label htmlFor="conversation">Conversation input</label>
+                  <div className="input-toolbar-actions">
+                    <input
+                      ref={fileInputRef}
+                      id="conversation-files"
+                      className="file-input"
+                      type="file"
+                      accept=".json,application/json"
+                      multiple
+                      onChange={handleFileUpload}
+                    />
+                    <button
+                      className="ghost"
+                      type="button"
+                      onClick={() => fileInputRef.current?.click()}
+                      disabled={loading}
+                    >
+                      Upload JSON
+                    </button>
+                  </div>
+                </div>
+                <p className="input-help">
+                  Paste plain text (<code>role: message</code>) or JSON with turns/messages/conversation
+                  fields. Non-conversation input is rejected before scoring.
+                </p>
                 <textarea
                   id="conversation"
-                  placeholder="user: I need help evaluating a conversation..."
+                  placeholder={'Plain text:\nuser: Hello\nassistant: Hi there\n\nJSON:\n{"messages":[{"role":"user","content":"Hello"}]}'}
                   rows={12}
                   value={inputText}
-                  onChange={(event) => setInputText(event.target.value)}
+                  onChange={(event) => {
+                    setInputText(event.target.value)
+                    setActiveFileId(null)
+                  }}
                 />
+                {!inputPreview.error && inputPreview.turns.length ? (
+                  <div className="parse-preview">
+                    <span className="parse-preview-label">
+                      Parsed {inputPreview.turns.length} turns ({inputPreview.formatDetected})
+                    </span>
+                    <pre>{formatTurnPreview(inputPreview.turns)}</pre>
+                  </div>
+                ) : null}
+                {loadedFiles.length ? (
+                  <div className="loaded-files">
+                    <div className="loaded-files-header">
+                      <span>{loadedFiles.length} loaded file(s)</span>
+                      {loadedFiles.length > 1 ? (
+                        <button
+                          className="ghost"
+                          type="button"
+                          onClick={handleEvaluateAll}
+                          disabled={loading}
+                        >
+                          Evaluate all
+                        </button>
+                      ) : null}
+                    </div>
+                    <div className="loaded-files-list">
+                      {loadedFiles.map((file) => (
+                        <button
+                          key={file.id}
+                          type="button"
+                          className={`loaded-file${activeFileId === file.id ? ' active' : ''}`}
+                          onClick={() => handleSelectLoadedFile(file.id)}
+                        >
+                          <span className="loaded-file-name">{file.name}</span>
+                          <span className={`loaded-file-status status-${file.status}`}>
+                            {file.status}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {batchProgress ? <div className="console-meta">{batchProgress}</div> : null}
                 {error ? <div className="console-error">{error}</div> : null}
                 <div className="console-actions">
                   <button className="primary" type="button" onClick={handleEvaluate} disabled={loading}>
@@ -426,7 +596,7 @@ function App() {
                 </div>
                 <div className="console-meta">
                   <span>Pipeline: Groq Llama 3.1 8B</span>
-                  <span>{result ? 'Live results loaded' : 'Demo mode'}</span>
+                  <span>{displayResult ? 'Live results loaded' : 'Demo mode'}</span>
                 </div>
               </div>
             </div>
