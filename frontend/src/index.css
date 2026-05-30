@@ -1,0 +1,66 @@
+:root {
+  --accent: #ff2b2b;
+  --text-primary: #0c0c0c;
+  --text-muted: #6b6b6b;
+  --surface: #f7f7f7;
+  --border: #d7d7d7;
+  --font-display: "Oswald", "Bebas Neue", "Impact", "Haettenschweiler", sans-serif;
+  --font-body: "Space Grotesk", "Futura", "Trebuchet MS", sans-serif;
+
+  font: 16px/1.6 var(--font-body);
+  color: var(--text-primary);
+  background: #ededed;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #f6f6f6, #e7e7e7 60%);
+}
+
+#root {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  background: #efefef;
+  position: relative;
+}
+
+#root::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 120px 120px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
