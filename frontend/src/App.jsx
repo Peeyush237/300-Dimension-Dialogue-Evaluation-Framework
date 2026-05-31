@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { formatTurnPreview, parseConversationInput } from './conversationParser'
+import HomePage from './HomePage'
 import './App.css'
 
 const demoScores = [
@@ -34,27 +35,6 @@ const demoScores = [
     confidence: 0.87,
     reason: 'No unsafe or hostile language detected.',
     scoreable: true,
-  },
-]
-
-const metrics = [
-  { label: 'Facets mapped', value: '399' },
-  { label: 'Batch size', value: '20–25' },
-  { label: 'Scale ready', value: '5000+' },
-]
-
-const pillars = [
-  {
-    title: 'Strategy',
-    description: 'Facet classification, difficulty tagging, and measurable anchors.',
-  },
-  {
-    title: 'Digital Systems',
-    description: 'Async LLM batches, validation pipelines, and deterministic outputs.',
-  },
-  {
-    title: 'Identity',
-    description: 'Consistent evaluation language across product, safety, and research.',
   },
 ]
 
@@ -443,135 +423,7 @@ function App() {
       </header>
 
       {page === 'home' ? (
-        <main className="page">
-          <section className="hero">
-            <div className="hero-meta">#DESKTOP_PRESENTATION</div>
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <h1>
-                  <span className="hero-title">INDEX</span>
-                  <span className="hero-title outline">EVALUATOR</span>
-                </h1>
-                <p className="hero-subtitle">
-                  Production-grade conversation scoring across 399 facets. Now with IDE-export
-                  JSON upload, async batch evaluation, and governance-ready evidence.
-                </p>
-                <div className="hero-actions">
-                  <button className="primary" type="button" onClick={() => setPage('evaluate')}>
-                    Go to evaluator
-                  </button>
-                  <button className="ghost" type="button" onClick={handleDownload}>
-                    Download report
-                  </button>
-                </div>
-                <div className="hero-stats">
-                  {metrics.map((metric) => (
-                    <div key={metric.label}>
-                      <span className="stat-value">{metric.value}</span>
-                      <span className="stat-label">{metric.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="hero-visual">
-                <div className="visual-card">
-                  <div className="visual-tag">LIVE CLUSTER</div>
-                  <div className="visual-metric">
-                    <span className="metric-value">12</span>
-                    <span className="metric-label">parallel batches</span>
-                  </div>
-                  <div className="visual-lines">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <div className="visual-footer">Design is not decoration</div>
-                </div>
-                <div className="hero-poster">
-                  <div className="poster-mask" />
-                  <div className="poster-copy">
-                    <span>87+</span>
-                    <p>Evaluations shipped</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="statement">
-            <div className="statement-inner">
-              <span className="statement-tag">#WE_ARE_A</span>
-              <h2>
-                DESIGNING <span>CLARITY</span>,
-                <br />
-                BUILDING <span>TRUSTED</span>
-                <br />
-                CONVERSATION INTELLIGENCE
-              </h2>
-              <p>
-                Every facet has an anchor, a reason, and a confidence signal. The output is ready
-                for policy, product, and research teams.
-              </p>
-            </div>
-          </section>
-
-          <section className="gallery">
-            <div className="gallery-grid">
-              <div className="gallery-card tall">
-                <span className="gallery-tag">#CASE_A</span>
-                <h3>Trustworthy evaluations</h3>
-                <p>Structured scoring for safety, empathy, and clarity.</p>
-              </div>
-              <div className="gallery-card wide">
-                <span className="gallery-tag">#CASE_B</span>
-                <h3>IDE-export ready</h3>
-                <p>Upload JSON exports from your workflow and score conversations in batch.</p>
-              </div>
-              <div className="gallery-card">
-                <span className="gallery-tag">#CASE_C</span>
-                <h3>Signals that ship</h3>
-                <p>Confidence thresholds keep decisions transparent.</p>
-              </div>
-            </div>
-            <div className="gallery-metric">
-              <span>104+</span>
-              <p>clusters in rotation</p>
-            </div>
-          </section>
-
-          <section className="impact">
-            <div className="impact-card">
-              <span className="impact-tag">#SYSTEM_SCALE</span>
-              <h3>
-                5000+ <span>FACETS</span>
-              </h3>
-              <p>Clustered batching keeps throughput linear with no architectural changes.</p>
-              <div className="impact-stats">
-                <div>
-                  <span className="stat-value">200</span>
-                  <span className="stat-label">async calls</span>
-                </div>
-                <div>
-                  <span className="stat-value">0</span>
-                  <span className="stat-label">redesigns</span>
-                </div>
-                <div>
-                  <span className="stat-value">99%</span>
-                  <span className="stat-label">schema coverage</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="pillars">
-            {pillars.map((pillar) => (
-              <div key={pillar.title} className="pillar">
-                <h4>{pillar.title}</h4>
-                <p>{pillar.description}</p>
-              </div>
-            ))}
-          </section>
-        </main>
+        <HomePage onGoToEvaluate={() => setPage('evaluate')} onDownloadReport={handleDownload} />
       ) : (
         <main
           className={`evaluate-shell${isDragging ? ' dragging' : ''}`}
