@@ -2,6 +2,12 @@
 
 Ahoum evaluates multi-turn conversations across a large facet set, returning a score, confidence, and reason per facet. It clusters scoreable facets for scalable batch evaluation and ships a React UI with streaming progress updates.
 
+## Live demo
+
+**Deployed UI (Vercel):** https://300-dimension-dialogue-evaluation-f.vercel.app/
+
+Open the link to paste or upload a conversation, run evaluation, and view streamed facet scores. The frontend connects to the hosted API on Render.
+
 ## Architecture
 
 ```mermaid
