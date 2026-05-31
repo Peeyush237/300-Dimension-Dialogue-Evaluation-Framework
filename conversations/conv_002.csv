@@ -1,0 +1,400 @@
+facet_name,category,score,confidence,reason,scoreable
+Affinity,other,5,0.8,The assistant's response suggests a high level of affinity for the user and their needs.,true
+Assertiveness and control in relationships,social,5,0.9,"The assistant takes charge and provides clear instructions, demonstrating assertiveness and control.",true
+Attachment style: Secure,other,5,0.9,"The assistant's guidance is informed by a secure attachment style, prioritizing the user's needs and well-being.",true
+Big-heartedness,other,5,1,"The assistant shows empathy and a willingness to help the user improve their cooking skills, demonstrating a caring attitude.",true
+Character strength: Perseverance,personality,5,1,"The assistant encourages the user to keep trying and to trust their own judgment, demonstrating a strong commitment to perseverance.",true
+Character strength: Social Intelligence,social,5,0.9,"The assistant demonstrates a high level of social intelligence by providing relevant and effective advice, and adapting to the user's needs.",true
+Collectedness,other,5,0.9,The assistant's response suggests a high level of collectedness and composure.,true
+Common-sense,other,5,0.8,The assistant's response demonstrates a clear understanding of the underlying principles of risotto preparation.,true
+Compassion,personality,5,1,"The assistant shows empathy and a willingness to help the user improve their cooking skills, demonstrating a caring and compassionate attitude.",true
+Connectedness: Belief in interconnections,other,5,0.8,The assistant's response suggests a high level of connectedness and belief in interconnections between different concepts.,true
+Conscientiousness (C),other,5,1,"The assistant provides organized and methodical advice, helping the user to achieve a better outcome, demonstrating a strong commitment to conscientiousness.",true
+Conscientiousness Facets,other,5,1,"The assistant provides organized and methodical advice, helping the user to achieve a better outcome, demonstrating a strong commitment to conscientiousness.",true
+Control over situations,other,5,0.9,"The assistant takes charge and provides clear instructions, demonstrating control over the situation.",true
+Conventional,other,5,0.9,The assistant's response suggests a high level of conventionality and adherence to established norms.,true
+Critical reasoning,cognitive,5,0.9,The assistant demonstrates critical reasoning skills by identifying the user's mistakes and providing a clear explanation of the underlying principles.,true
+Desire for excellence,other,5,1,"The assistant encourages the user to strive for excellence in their cooking skills, demonstrating a strong desire for excellence.",true
+Determinedness,personality,5,0.9,The assistant's tone and language suggest a high level of determination to help the user improve their risotto preparation skills.,true
+Discreteness,other,5,0.8,The assistant's response suggests a high level of discreteness in their explanation of risotto preparation.,true
+Emotional Boundaries,emotion,5,0.9,The assistant maintains a clear and respectful emotional boundary throughout the conversation.,true
+Ethical leadership rating,social,5,0.9,The assistant's guidance is informed by a strong sense of ethics and responsibility.,true
+Ethical practices,other,5,0.9,The assistant's guidance is informed by a strong sense of ethics and responsibility.,true
+Ethical standards,other,5,0.9,The assistant provides guidance that prioritizes the user's well-being and safety in cooking.,true
+HEXACO domain: Honesty-Humility,other,5,1,"The assistant provides honest and humble advice, helping the user to achieve a better outcome, demonstrating a strong commitment to honesty-humility.",true
+Honesty-humility trait score,other,5,1,"The assistant provides honest and humble advice, helping the user to achieve a better outcome, demonstrating a strong commitment to honesty-humility.",true
+HonestyHumility,other,5,1,"The assistant acknowledges the user's mistakes, provides constructive feedback, and shows a willingness to help them improve.",true
+Impartial-mindedness,personality,5,1,"The assistant provides unbiased and objective advice, helping the user to make an informed decision, demonstrating impartial-mindedness.",true
+Intellect,other,5,0.9,"The assistant provides accurate and relevant information, demonstrating a high level of intellectual ability.",true
+Judging (J),other,5,0.9,The assistant demonstrates judging skills by evaluating the user's mistakes and providing a clear explanation of the underlying principles.,true
+Judging Consequences,other,5,0.9,The assistant demonstrates judging skills by evaluating the consequences of the user's mistakes.,true
+Justice-mindedness,social,5,1,"The assistant provides accurate and fair advice, helping the user to achieve a better outcome, demonstrating a commitment to justice.",true
+Language use,linguistic,5,0.9,The assistant uses clear and concise language to explain the underlying principles of risotto preparation.,true
+Logical Sequence Identification,cognitive,5,0.9,The assistant identifies and addresses the user's mistakes in a logical and sequential manner.,true
+Moral and Ethical Parameters,other,5,0.9,The assistant's guidance is grounded in a strong sense of morality and ethics.,true
+Perceiving,cognitive,5,0.8,The assistant's response suggests a high level of perceptual awareness of the user's needs and mistakes.,true
+Perseverance,personality,5,1,"The assistant encourages the user to keep trying and to trust their own judgment, demonstrating a strong commitment to perseverance.",true
+Preferred epistemology,cognitive,5,0.8,The assistant's response suggests a preference for empirical evidence and hands-on experience over theoretical knowledge.,true
+Psychological construct: Self-Compassion total,cognitive,5,1,"The assistant shows empathy and a willingness to help the user improve their cooking skills, demonstrating a high level of self-compassion.",true
+Reliance on context,other,5,0.8,The assistant's response suggests a high level of reliance on context and understanding of the user's needs.,true
+Safety compliance,safety,5,0.9,The assistant provides guidance that prioritizes the user's safety and well-being.,true
+Satya Adherence,other,5,1,"The assistant provides accurate and truthful advice, helping the user to achieve a better outcome, demonstrating a strong commitment to satya adherence.",true
+Self-effacement,other,5,1,"The assistant provides humble and helpful advice, showing no signs of self-aggrandizement or self-promotion.",true
+Self-Efficacy,other,5,1,"The assistant encourages the user to trust their own judgment and to take control of their cooking skills, demonstrating a strong commitment to self-efficacy.",true
+Self-improvement,other,5,1,The assistant provides actionable advice and corrects the user's mistakes to help them improve their risotto-making skills.,true
+Selfcontrol,personality,5,1,"The assistant provides controlled and measured advice, helping the user to achieve a better outcome, demonstrating strong self-control.",true
+SelfDirectedness,other,5,1,"The assistant encourages the user to take control of their cooking skills and to trust their own judgment, demonstrating a strong commitment to self-directedness.",true
+Sensitivity,other,5,0.8,The assistant's response suggests a high level of sensitivity to the user's needs and mistakes.,true
+Sentence Structure,linguistic,5,0.9,The assistant's response demonstrates a clear and logical sentence structure.,true
+Social Interaction Skills,social,5,0.9,"The assistant engages in a clear and effective conversation, using active listening and providing relevant information to address the user's concerns.",true
+Social-cognition variable: Cognitive Empathy,social,5,0.9,The assistant demonstrates a high level of cognitive empathy by understanding the user's concerns and providing relevant advice.,true
+Structure,linguistic,5,0.9,"The conversation follows a clear and logical structure, with the assistant providing a step-by-step guide to risotto preparation.",true
+Value orientation: Universalism,other,5,1,"The assistant provides culturally neutral and inclusive advice, helping the user to achieve a better outcome, demonstrating a strong commitment to universalism.",true
+Alignment with societal roles,other,4,0.8,"The assistant's responses suggest a high level of alignment with societal roles, providing helpful and accurate information in a clear and effective manner.",true
+Desire to influence others,other,4,0.7,The assistant's tone and language suggest a desire to influence the user's cooking practices.,true
+Esteem Needs,other,4,0.7,"The assistant acknowledges and addresses the user's concerns, meeting their esteem needs.",true
+Psychological construct: Cultural Intelligence – Behavioral,cognitive,4,0.8,"The assistant's responses suggest a high level of cultural intelligence, adapting to the user's needs and providing relevant information.",true
+Psychological construct: Social Desirability tendency,social,4,0.8,The assistant provides helpful and accurate information without appearing overly concerned with personal gain or social approval.,true
+Relationship Building Themes,social,4,0.7,The assistant builds rapport by acknowledging the user's mistake and providing personalized advice.,true
+Self Perspective,other,4,0.9,"The assistant provides specific, actionable advice and encourages the user to trust their own judgment, showing a focus on the user's perspective.",true
+Trust in others,other,4,0.7,The assistant's tone and language suggest a willingness to trust the user's abilities and judgment.,true
+Affiliation Motivation,social,3,0.7,"The assistant's tone is friendly and helpful, but they don't explicitly express a desire to build a relationship with the user.",true
+Cunningness,safety,3,0.8,"The assistant uses a clever analogy to explain the importance of warm stock, but the conversation is mostly focused on providing practical advice.",true
+High-spiritedness,emotion,3,0.7,"The assistant's tone is friendly and encouraging, but they don't explicitly express a high level of enthusiasm or excitement.",true
+Individuality,other,3,0.7,"The assistant provides unique and helpful advice, but they don't explicitly express a desire to be different or to challenge the status quo.",true
+Joyfulness,emotion,3,0.7,"The assistant's tone is friendly and encouraging, but they don't explicitly express a high level of joy or enthusiasm.",true
+Outspokenness,other,3,0.7,"The assistant provides clear and direct advice, but they don't explicitly express a desire to be outspoken or to challenge the status quo.",true
+SelfEsteem,other,3,0.6,"The assistant's tone is supportive and encouraging, but they don't explicitly praise the user's efforts or abilities.",true
+Social Boldness,social,3,0.6,"The assistant offers direct and clear advice, but does not push boundaries or challenge the user's assumptions aggressively.",true
+Social-cognition variable: Faux Pas Recognition accuracy,social,3,0.6,"The assistant recognizes the user's faux pas (adding cold stock) and provides relevant advice, but may not always anticipate potential faux pas.",true
+Transactional Leadership,social,3,0.6,"The assistant provides guidance, but does not explicitly delegate tasks or empower the user.",true
+Affection,other,2,0.5,"The assistant's tone is professional, but lacks warmth or emotional expression.",true
+Cultural Identity,other,2,0.4,"The assistant's responses do not reveal a strong sense of personal or cultural identity, and may be applicable to a wide range of users.",true
+Delegation Ability,social,2,0.5,"The assistant provides guidance, but does not explicitly delegate tasks or empower the user.",true
+Delegation skills,social,2,0.5,"The assistant provides guidance, but does not explicitly delegate tasks or empower the user.",true
+Depth of Emotional Connections,emotion,2,0.4,"The assistant's responses do not suggest a deep emotional connection with the user, and may be perceived as somewhat impersonal.",true
+Psychological construct: Social Conformity tendency,social,2,0.4,"The assistant's responses do not suggest a strong tendency towards social conformity, and may be perceived as independent and autonomous.",true
+Additional Common Parameters and Their End Points,other,1,0.4,The assistant's response does not suggest a high level of awareness of additional common parameters and their end points.,true
+Astrology: Rising sign is Scorpio,other,1,0,There is no information provided to assess the assistant's rising sign or astrological characteristics.,true
+Brazenness,other,1,0.9,"The assistant provides humble and helpful advice, showing no signs of brazenness or arrogance.",true
+Dishonesty,safety,1,0.9,"The assistant provides accurate and helpful advice, showing no signs of dishonesty or deception.",true
+Enneagram Personality Types,other,1,0,There is no information provided to assess the assistant's Enneagram personality type.,true
+Ethnocentrism,other,1,0.9,"The assistant provides culturally neutral and inclusive advice, showing no signs of ethnocentrism or cultural bias.",true
+Home-security-system presence,other,1,0.2,The assistant's response does not suggest a high level of awareness of home security systems.,true
+Immaturity,other,1,0.8,The assistant's tone and language are professional and mature.,true
+Impudence,other,1,0.9,"The assistant provides respectful and considerate advice, showing no signs of impudence or disrespect.",true
+Naivety,other,1,0.9,The user's question and the assistant's response suggest a high level of naivety about risotto preparation.,true
+Need for social interaction,social,1,0.2,The assistant's responses do not suggest a strong need for social interaction or human connection.,true
+Overprotectiveness,other,1,0.8,The assistant provides guidance without being overly controlling or protective.,true
+Self-righteousness,other,1,0.9,"The assistant provides humble and helpful advice, showing no signs of self-righteousness or arrogance.",true
+Slothfulness,other,1,0.9,"The assistant provides helpful and actionable advice, showing no signs of laziness or lack of effort.",true
+Social Desirability Bias,social,1,0.2,"The assistant's responses do not suggest a strong bias towards social desirability, and may be perceived as honest and accurate.",true
+Submissiveness,personality,1,0.6,"The assistant does not display submissive behavior, instead taking the lead in the conversation.",true
+Suspicion,other,1,0.6,The assistant's response does not suggest a high level of suspicion or skepticism.,true
+Abasement,other,,0,not_inferable_from_conversation_text,false
+Achievement Motivation,other,,0,not_inferable_from_conversation_text,false
+Acidity,other,,0,not_inferable_from_conversation_text,false
+Activator: Turning thoughts into action,other,,0,not_inferable_from_conversation_text,false
+Adaptability and Flexibility,other,,0,not_inferable_from_conversation_text,false
+Adaptability and Flexibility Subcomponents,other,,0,not_inferable_from_conversation_text,false
+Adventure-Seeking Behavior,other,,0,not_inferable_from_conversation_text,false
+Aesthetic Appreciation,other,,0,not_inferable_from_conversation_text,false
+Aestheticism,other,,0,not_inferable_from_conversation_text,false
+Aloofness,other,,0,not_inferable_from_conversation_text,false
+Alphabetical filing skills,linguistic,,0,not_inferable_from_conversation_text,false
+Analogies,other,,0,not_inferable_from_conversation_text,false
+Anatomy knowledge,other,,0,not_inferable_from_conversation_text,false
+Anticipativeness,other,,0,not_inferable_from_conversation_text,false
+Ardency,other,,0,not_inferable_from_conversation_text,false
+Arts and Humanities,other,,0,not_inferable_from_conversation_text,false
+Attachment avoidance score,other,,0,not_inferable_from_conversation_text,false
+Attitude toward learning,other,,0,not_inferable_from_conversation_text,false
+Auditory memory,cognitive,,0,not_inferable_from_conversation_text,false
+Auditory Memory Recall,cognitive,,0,not_inferable_from_conversation_text,false
+Aura-color perception,spiritual,,0,not_inferable_from_conversation_text,false
+Avoiding,other,,0,not_inferable_from_conversation_text,false
+Bahá’í spiritual metric: Ridván festival participation,spiritual,,0,not_inferable_from_conversation_text,false
+Basophil count,biological,,0,not_inferable_from_conversation_text,false
+Behavioral Tendencies and Subcomponents,other,,0,not_inferable_from_conversation_text,false
+Big Five facet Openness – Artistic Interests,personality,,0,not_inferable_from_conversation_text,false
+Binding foundations index,other,,0,not_inferable_from_conversation_text,false
+Blissfulness,other,,0,not_inferable_from_conversation_text,false
+Blog-subscriber count,other,,0,not_inferable_from_conversation_text,false
+Boredom Susceptibility,other,,0,not_inferable_from_conversation_text,false
+Bravery,other,,0,not_inferable_from_conversation_text,false
+Breakfast-skipping frequency,lifestyle,,0,not_inferable_from_conversation_text,false
+Brevity,linguistic,,0,not_inferable_from_conversation_text,false
+Buddhist practice: Eightfold Path – Right Intention level,spiritual,,0,not_inferable_from_conversation_text,false
+Burnout Symptoms,emotion,,0,not_inferable_from_conversation_text,false
+Caffeine intake (mg/day),lifestyle,,0,not_inferable_from_conversation_text,false
+Caffeine sensitivity gene,biological,,0,not_inferable_from_conversation_text,false
+Cantankerousness,other,,0,not_inferable_from_conversation_text,false
+Casual lifestyle,other,,0,not_inferable_from_conversation_text,false
+Childhood Experiences,other,,0,not_inferable_from_conversation_text,false
+Chivalrousness,social,,0,not_inferable_from_conversation_text,false
+Choir participation years,lifestyle,,0,not_inferable_from_conversation_text,false
+Chromatin-accessibility score,other,,0,not_inferable_from_conversation_text,false
+Chronic pain presence,other,,0,not_inferable_from_conversation_text,false
+Civility,social,,0,not_inferable_from_conversation_text,false
+Classiness,other,,0,not_inferable_from_conversation_text,false
+Cloud-backup frequency,other,,0,not_inferable_from_conversation_text,false
+Clumsiness,other,,0,not_inferable_from_conversation_text,false
+Coarseness,other,,0,not_inferable_from_conversation_text,false
+Cognitive measure: Working Memory Index,cognitive,,0,not_inferable_from_conversation_text,false
+Collaboration,social,,0,not_inferable_from_conversation_text,false
+Comfort with Vulnerability,other,,0,not_inferable_from_conversation_text,false
+Commute time/day,lifestyle,,0,not_inferable_from_conversation_text,false
+Comparing alphanumeric data,other,,0,not_inferable_from_conversation_text,false
+Compassion Fatigue,personality,,0,not_inferable_from_conversation_text,false
+Competition,other,,0,not_inferable_from_conversation_text,false
+Comprehension of spoken information,other,,0,not_inferable_from_conversation_text,false
+Compulsive activities,other,,0,not_inferable_from_conversation_text,false
+Computer Skills,other,,0,not_inferable_from_conversation_text,false
+Concreteness,other,,0,not_inferable_from_conversation_text,false
+Conformity,other,,0,not_inferable_from_conversation_text,false
+Conservatism,other,,0,not_inferable_from_conversation_text,false
+Contentment Levels,emotion,,0,not_inferable_from_conversation_text,false
+Contribution to Group Goals,other,,0,not_inferable_from_conversation_text,false
+Controlling Reactions,other,,0,not_inferable_from_conversation_text,false
+Cooking and Culinary Arts,other,,0,not_inferable_from_conversation_text,false
+Cooperation,social,,0,not_inferable_from_conversation_text,false
+Cordiality,other,,0,not_inferable_from_conversation_text,false
+Courageousness,other,,0,not_inferable_from_conversation_text,false
+Creative resilience,other,,0,not_inferable_from_conversation_text,false
+Creative risk-taking tendency,personality,,0,not_inferable_from_conversation_text,false
+Creativity in solutions,other,,0,not_inferable_from_conversation_text,false
+Dance rehearsal hours/week,other,,0,not_inferable_from_conversation_text,false
+Dance-cardio sessions,lifestyle,,0,not_inferable_from_conversation_text,false
+Dance-style mastery diversity,other,,0,not_inferable_from_conversation_text,false
+Data Analysis,cognitive,,0,not_inferable_from_conversation_text,false
+Data-sharing consent level,other,,0,not_inferable_from_conversation_text,false
+Dauntlessness,other,,0,not_inferable_from_conversation_text,false
+Decency,other,,0,not_inferable_from_conversation_text,false
+Decision-Making Confidence,cognitive,,0,not_inferable_from_conversation_text,false
+Decision-making decisiveness,cognitive,,0,not_inferable_from_conversation_text,false
+Decision-making speed,cognitive,,0,not_inferable_from_conversation_text,false
+Defense-mechanism tendency: Introjection,other,,0,not_inferable_from_conversation_text,false
+Democratic Leadership,social,,0,not_inferable_from_conversation_text,false
+Depression (DEP),other,,0,not_inferable_from_conversation_text,false
+Depression Symptoms,other,,0,not_inferable_from_conversation_text,false
+Depression: Feelings of sadness and hopelessness,emotion,,0,not_inferable_from_conversation_text,false
+Desperation,other,,0,not_inferable_from_conversation_text,false
+Dietary Habits,other,,0,not_inferable_from_conversation_text,false
+Digital-nomad months,other,,0,not_inferable_from_conversation_text,false
+Dignity,other,,0,not_inferable_from_conversation_text,false
+Disagreeableness,other,,0,not_inferable_from_conversation_text,false
+Discernment practice hours / week,other,,0,not_inferable_from_conversation_text,false
+Discontentment,emotion,,0,not_inferable_from_conversation_text,false
+Disrespect,other,,0,not_inferable_from_conversation_text,false
+Divided Attention Ability,other,,0,not_inferable_from_conversation_text,false
+Doggedness,personality,,0,not_inferable_from_conversation_text,false
+Drollness,other,,0,not_inferable_from_conversation_text,false
+Drug-use history,other,,0,not_inferable_from_conversation_text,false
+Eating Habits (Home-Cooked vs. Eating Out),lifestyle,,0,not_inferable_from_conversation_text,false
+Eco-tourism trips,other,,0,not_inferable_from_conversation_text,false
+Economic reasoning,cognitive,,0,not_inferable_from_conversation_text,false
+Effeteness,other,,0,not_inferable_from_conversation_text,false
+Ego Dissolution Frequency,other,,0,not_inferable_from_conversation_text,false
+Emotional-intelligence measure: Impulsiveness,emotion,,0,not_inferable_from_conversation_text,false
+Emotionalism,emotion,,0,not_inferable_from_conversation_text,false
+Encouraging participation,other,,0,not_inferable_from_conversation_text,false
+Energy-healing practice: Reiki sessions / year,lifestyle,,0,not_inferable_from_conversation_text,false
+Enthusiasm,personality,,0,not_inferable_from_conversation_text,false
+Equitableness,other,,0,not_inferable_from_conversation_text,false
+Estimating Calculations,other,,0,not_inferable_from_conversation_text,false
+Evaluating Solutions,other,,0,not_inferable_from_conversation_text,false
+Exemplariness,other,,0,not_inferable_from_conversation_text,false
+Eye-contact duration,other,,0,not_inferable_from_conversation_text,false
+Fearfulness: Fear of physical dangers,other,,0,not_inferable_from_conversation_text,false
+Feedback-giving frequency,other,,0,not_inferable_from_conversation_text,false
+Flawlessness,other,,0,not_inferable_from_conversation_text,false
+Frankness,other,,0,not_inferable_from_conversation_text,false
+FSH level,biological,,0,not_inferable_from_conversation_text,false
+Gamified-finance-app usage,lifestyle,,0,not_inferable_from_conversation_text,false
+General Mood and Attitude,biological,,0,not_inferable_from_conversation_text,false
+Genialness,other,,0,not_inferable_from_conversation_text,false
+Genuine,other,,0,not_inferable_from_conversation_text,false
+Gnostic spiritual metric: Archon meditation frequency,spiritual,,0,not_inferable_from_conversation_text,false
+Goal-Directed Behavior,other,,0,not_inferable_from_conversation_text,false
+Graffiti appreciation,other,,0,not_inferable_from_conversation_text,false
+Happiness,emotion,,0,not_inferable_from_conversation_text,false
+Hardworking,other,,0,not_inferable_from_conversation_text,false
+Harmfulness,safety,,0,not_inferable_from_conversation_text,false
+Hatefulness,safety,,0,not_inferable_from_conversation_text,false
+Health-literacy level,other,,0,not_inferable_from_conversation_text,false
+Hesitation,personality,,0,not_inferable_from_conversation_text,false
+HEXACO Personality Inventory Facets,other,,0,not_inferable_from_conversation_text,false
+Hindu spiritual metric: Bhagavad-Gita study hours,spiritual,,0,not_inferable_from_conversation_text,false
+Hindu spiritual metric: Vrata vows observed / year,spiritual,,0,not_inferable_from_conversation_text,false
+Hindu spiritual metric: Yoga discipline hours / week,spiritual,,0,not_inferable_from_conversation_text,false
+Holiness,spiritual,,0,not_inferable_from_conversation_text,false
+Hostility,safety,,0,not_inferable_from_conversation_text,false
+Hypomania (Ma),other,,0,not_inferable_from_conversation_text,false
+Hysteria (Hy),other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 19 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 22 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 24 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 36 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 43 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 49 resonance level,other,,0,not_inferable_from_conversation_text,false
+I Ching hexagram 5 resonance level,other,,0,not_inferable_from_conversation_text,false
+Ideas generated/day,biological,,0,not_inferable_from_conversation_text,false
+Immune-response age,other,,0,not_inferable_from_conversation_text,false
+Impracticalness,other,,0,not_inferable_from_conversation_text,false
+Impulsivity,other,,0,not_inferable_from_conversation_text,false
+Inattentiveness,other,,0,not_inferable_from_conversation_text,false
+Independence,other,,0,not_inferable_from_conversation_text,false
+Inefficiency,other,,0,not_inferable_from_conversation_text,false
+Information Retention,other,,0,not_inferable_from_conversation_text,false
+Initiative,other,,0,not_inferable_from_conversation_text,false
+Innovation and Creativity Components,other,,0,not_inferable_from_conversation_text,false
+Input,other,,0,not_inferable_from_conversation_text,false
+Intelligence Quotient (IQ),other,,0,not_inferable_from_conversation_text,false
+Intrinsic Motivation,other,,0,not_inferable_from_conversation_text,false
+Inversion comfort level,other,,0,not_inferable_from_conversation_text,false
+Irritability,emotion,,0,not_inferable_from_conversation_text,false
+Islamic practice: Seerah study hours,other,,0,not_inferable_from_conversation_text,false
+Jewish spiritual metric: Shabbat candle-lighting consistency,spiritual,,0,not_inferable_from_conversation_text,false
+Jewish spiritual metric: Sukkot lulav-shaking days,spiritual,,0,not_inferable_from_conversation_text,false
+Kabbalah sephira balance: Tiferet,spiritual,,0,not_inferable_from_conversation_text,false
+Kink-interest diversity,other,,0,not_inferable_from_conversation_text,false
+Leadership Potential,social,,0,not_inferable_from_conversation_text,false
+Leadership Styles,social,,0,not_inferable_from_conversation_text,false
+Leadership Styles and Behaviors,social,,0,not_inferable_from_conversation_text,false
+Learning Style,other,,0,not_inferable_from_conversation_text,false
+Learning through movement,other,,0,not_inferable_from_conversation_text,false
+Liberalism,other,,0,not_inferable_from_conversation_text,false
+Listening Skills Subcomponents,linguistic,,0,not_inferable_from_conversation_text,false
+Local-food sourcing %,other,,0,not_inferable_from_conversation_text,false
+Macronutrient ratio: carbs,other,,0,not_inferable_from_conversation_text,false
+Macronutrient ratio: fat,other,,0,not_inferable_from_conversation_text,false
+Managing emotions,other,,0,not_inferable_from_conversation_text,false
+Martyrdom,other,,0,not_inferable_from_conversation_text,false
+Material properties knowledge,other,,0,not_inferable_from_conversation_text,false
+Meeting Deadlines,other,,0,not_inferable_from_conversation_text,false
+Memory for Sounds,biological,,0,not_inferable_from_conversation_text,false
+Mental Arithmetic Speed,cognitive,,0,not_inferable_from_conversation_text,false
+Merriness,other,,0,not_inferable_from_conversation_text,false
+Metabolic Rate (Low or High),other,,0,not_inferable_from_conversation_text,false
+Mindfulness facet: Observing,spiritual,,0,not_inferable_from_conversation_text,false
+Moroseness,emotion,,0,not_inferable_from_conversation_text,false
+Motivational Drivers,other,,0,not_inferable_from_conversation_text,false
+Multiculturalism,other,,0,not_inferable_from_conversation_text,false
+Museum visits/year,lifestyle,,0,not_inferable_from_conversation_text,false
+Music-lessons years,other,,0,not_inferable_from_conversation_text,false
+Mysteriousness,other,,0,not_inferable_from_conversation_text,false
+Nationality,other,,0,not_inferable_from_conversation_text,false
+Negative Affect Frequency,other,,0,not_inferable_from_conversation_text,false
+Network basics,other,,0,not_inferable_from_conversation_text,false
+Neuroticism,other,,0,not_inferable_from_conversation_text,false
+New-Age spiritual metric: Channeling sessions / year,lifestyle,,0,not_inferable_from_conversation_text,false
+Non-Verbal Communication Skills,linguistic,,0,not_inferable_from_conversation_text,false
+Numeric Filing Skills,other,,0,not_inferable_from_conversation_text,false
+Numerical Reasoning,cognitive,,0,not_inferable_from_conversation_text,false
+Numerical Reasoning Subcomponents,cognitive,,0,not_inferable_from_conversation_text,false
+Open-source contributions,other,,0,not_inferable_from_conversation_text,false
+Openness,personality,,0,not_inferable_from_conversation_text,false
+Orderliness,personality,,0,not_inferable_from_conversation_text,false
+Organized lifestyle,lifestyle,,0,not_inferable_from_conversation_text,false
+Originality,other,,0,not_inferable_from_conversation_text,false
+Parathyroid-hormone level,biological,,0,not_inferable_from_conversation_text,false
+Participation in Community Activities,social,,0,not_inferable_from_conversation_text,false
+Passive-Aggressive,safety,,0,not_inferable_from_conversation_text,false
+Passport-stamps count,other,,0,not_inferable_from_conversation_text,false
+Patience: Resistance to anger,personality,,0,not_inferable_from_conversation_text,false
+Patient care orientation,other,,0,not_inferable_from_conversation_text,false
+Patriotism,social,,0,not_inferable_from_conversation_text,false
+Peacefulness,emotion,,0,not_inferable_from_conversation_text,false
+Peer-collaboration hours,social,,0,not_inferable_from_conversation_text,false
+Peer-to-peer lending usage,lifestyle,,0,not_inferable_from_conversation_text,false
+Persistence,other,,0,not_inferable_from_conversation_text,false
+Pet-enrichment activities count,lifestyle,,0,not_inferable_from_conversation_text,false
+Physical-violence exposure,other,,0,not_inferable_from_conversation_text,false
+Pilgrimage participation count,lifestyle,,0,not_inferable_from_conversation_text,false
+Polygenic risk: cardiovascular disease,biological,,0,not_inferable_from_conversation_text,false
+Practice frequency: Mantra meditation,other,,0,not_inferable_from_conversation_text,false
+Practice frequency: Walking meditation,other,,0,not_inferable_from_conversation_text,false
+Precision of Movements,linguistic,,0,not_inferable_from_conversation_text,false
+Preference for Home-Cooked vs Restaurant Meals,lifestyle,,0,not_inferable_from_conversation_text,false
+Presence of Spiritual Pain,spiritual,,0,not_inferable_from_conversation_text,false
+Processed-food frequency,other,,0,not_inferable_from_conversation_text,false
+Psychological construct: Acculturative Stress score,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Consummatory Pleasure scale,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Excuse-Making tendency,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Executive-Function composite,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Eye-Contact avoidance score,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Hope scale,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Identity Diffusion level,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Need for Achievement level,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Operant-Learning rate,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Perfectionistic Strivings,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Psychological Safety climate,cognitive,,0,not_inferable_from_conversation_text,false
+Psychological construct: Resilience-Trait score,cognitive,,0,not_inferable_from_conversation_text,false
+Psychomotor Ability Subcomponents,biological,,0,not_inferable_from_conversation_text,false
+Psychoticism,other,,0,not_inferable_from_conversation_text,false
+Public-transport km/week,other,,0,not_inferable_from_conversation_text,false
+Pure Challenge,other,,0,not_inferable_from_conversation_text,false
+Quirkiness,personality,,0,not_inferable_from_conversation_text,false
+Rapid cognitive processing,cognitive,,0,not_inferable_from_conversation_text,false
+Rebelliousness,other,,0,not_inferable_from_conversation_text,false
+Regularity of Self-Reflection,other,,0,not_inferable_from_conversation_text,false
+Religious coping – Negative,other,,0,not_inferable_from_conversation_text,false
+Religious practice: Quran khatam cycles per year,spiritual,,0,not_inferable_from_conversation_text,false
+Risktaking,other,,0,not_inferable_from_conversation_text,false
+Robotics-interaction frequency,other,,0,not_inferable_from_conversation_text,false
+Role of Spirituality in Community Involvement,spiritual,,0,not_inferable_from_conversation_text,false
+Sacred text engagement: Quran surahs memorized,spiritual,,0,not_inferable_from_conversation_text,false
+Sacred text engagement: Zohar (Kabbalah) study hours,spiritual,,0,not_inferable_from_conversation_text,false
+Scripture memorization verses,other,,0,not_inferable_from_conversation_text,false
+Seeking approval,other,,0,not_inferable_from_conversation_text,false
+Sensationalism,safety,,0,not_inferable_from_conversation_text,false
+Sense-of-coherence score,other,,0,not_inferable_from_conversation_text,false
+Sensitiveness,other,,0,not_inferable_from_conversation_text,false
+Sequential Memory Recall,cognitive,,0,not_inferable_from_conversation_text,false
+Serotonin transporter availability,other,,0,not_inferable_from_conversation_text,false
+Servility,other,,0,not_inferable_from_conversation_text,false
+Significance: Desire to make an impact,other,,0,not_inferable_from_conversation_text,false
+Sikh spiritual metric: Kirtan participation frequency,spiritual,,0,not_inferable_from_conversation_text,false
+Skill-endorsements count,other,,0,not_inferable_from_conversation_text,false
+Sleep Apnea,biological,,0,not_inferable_from_conversation_text,false
+Sleep-disorder diagnosis,biological,,0,not_inferable_from_conversation_text,false
+Sleep-environment temperature,other,,0,not_inferable_from_conversation_text,false
+Snacking Behavior,other,,0,not_inferable_from_conversation_text,false
+Social-cognition variable: Mentalizing network activation,social,,0,not_inferable_from_conversation_text,false
+Soft-skill training hours,other,,0,not_inferable_from_conversation_text,false
+Spatial perception,other,,0,not_inferable_from_conversation_text,false
+Specialist,other,,0,not_inferable_from_conversation_text,false
+Spelling Accuracy,linguistic,,0,not_inferable_from_conversation_text,false
+Spiritual virtue: Humility practice index,spiritual,,0,not_inferable_from_conversation_text,false
+Sportsmanship rating,social,,0,not_inferable_from_conversation_text,false
+Statistical Reasoning,cognitive,,0,not_inferable_from_conversation_text,false
+Storytelling proficiency,other,,0,not_inferable_from_conversation_text,false
+Stress Recovery Ability,other,,0,not_inferable_from_conversation_text,false
+Submission,other,,0,not_inferable_from_conversation_text,false
+Subscription count,other,,0,not_inferable_from_conversation_text,false
+Sufi practice: Dhikr repetitions / day,spiritual,,0,not_inferable_from_conversation_text,false
+Sufi practice: Sufi retreat attendance count,spiritual,,0,not_inferable_from_conversation_text,false
+Sustainable-transport usage,lifestyle,,0,not_inferable_from_conversation_text,false
+Synthesis of information,cognitive,,0,not_inferable_from_conversation_text,false
+Talkativeness,other,,0,not_inferable_from_conversation_text,false
+Tendency Toward Compromise or Confrontation,other,,0,not_inferable_from_conversation_text,false
+Time Orientation End Points,other,,0,not_inferable_from_conversation_text,false
+Time outdoors/day (h),lifestyle,,0,not_inferable_from_conversation_text,false
+Training-cycle length,other,,0,not_inferable_from_conversation_text,false
+Travel-companions diversity,lifestyle,,0,not_inferable_from_conversation_text,false
+Troubleshooting technical issues,cognitive,,0,not_inferable_from_conversation_text,false
+Type of Support Preferred (Emotional vs. Practical),social,,0,not_inferable_from_conversation_text,false
+Types of Mindfulness Techniques Used,spiritual,,0,not_inferable_from_conversation_text,false
+Unassertiveness,personality,,0,not_inferable_from_conversation_text,false
+Understanding Mathematical Concepts,other,,0,not_inferable_from_conversation_text,false
+Understanding mechanical concepts,other,,0,not_inferable_from_conversation_text,false
+Use of Mathematical Formulas,other,,0,not_inferable_from_conversation_text,false
+Use of Nature as a Stress Reliever,other,,0,not_inferable_from_conversation_text,false
+Vision-check frequency,other,,0,not_inferable_from_conversation_text,false
+Vivacity,personality,,0,not_inferable_from_conversation_text,false
+Volunteer Work,other,,0,not_inferable_from_conversation_text,false
+Wake-time consistency,lifestyle,,0,not_inferable_from_conversation_text,false
+Warmheartedness,emotion,,0,not_inferable_from_conversation_text,false
+Well-being component: Engagement,other,,0,not_inferable_from_conversation_text,false
+Withdrawnness,other,,0,not_inferable_from_conversation_text,false
+Work Styles,other,,0,not_inferable_from_conversation_text,false
