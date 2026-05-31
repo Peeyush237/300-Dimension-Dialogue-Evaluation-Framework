@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_036",
+  "scenario_type": "customer_complaint",
+  "description": "Product arrived damaged — laptop with cracked screen",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I ordered a laptop and it arrived with a cracked screen. This is completely unacceptable. I need this resolved immediately."
+    },
+    {
+      "role": "assistant",
+      "content": "I completely understand your frustration — receiving a damaged product is genuinely unacceptable for something as significant as a laptop. I want to get this resolved as quickly as possible. Can you share your order number and confirm when it arrived? I will also need to know whether the outer packaging was damaged, as that helps determine whether this is a shipping issue or a manufacturer defect."
+    },
+    {
+      "role": "user",
+      "content": "Order #47823. It arrived today. The box looked fine from the outside."
+    },
+    {
+      "role": "assistant",
+      "content": "A cracked screen with undamaged outer packaging suggests an internal packing issue or pre-shipment defect. Either way, this is fully covered — you should not have to absorb this in any way. I am initiating a replacement order now and will generate a prepaid return label for the damaged unit. You will receive a confirmation email within a few minutes and the replacement will ship with expedited delivery. Is there anything time-sensitive about the laptop need — a deadline or travel — that I should note to prioritise further?"
+    },
+    {
+      "role": "user",
+      "content": "I have a presentation tomorrow morning. I needed this laptop for it."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a serious situation and I am sorry the timing is so bad. The replacement will not arrive in time regardless of expediting. Here is what I can do now: process a full refund immediately if you would prefer to source something locally today, or ensure the replacement is overnighted for tomorrow evening if that helps for future use. For tomorrow specifically — if you have access to any other device, I can guide you through quickly accessing your presentation files via cloud. I want to make sure tomorrow goes as well as possible for you."
+    }
+  ]
+}

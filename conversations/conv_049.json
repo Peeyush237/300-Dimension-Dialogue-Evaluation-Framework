@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_049",
+  "scenario_type": "small_talk_casual",
+  "description": "Learning to cook better — Italian food and carbonara",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want to learn to cook better. I can make basic things but I want to level up. Any advice?"
+    },
+    {
+      "role": "assistant",
+      "content": "The fastest way to level up is to stop following recipes and start understanding techniques. Recipes are great for baking where chemistry matters, but for savory cooking, once you understand a few core techniques you can improvise endlessly. The techniques worth mastering: how to properly sauté (high heat, do not crowd the pan), how to build a sauce in a pan (deglazing, reducing), how to season correctly and at the right moments, and how to control heat. What kind of food do you like to eat most?"
+    },
+    {
+      "role": "user",
+      "content": "I love Italian food. Pasta especially."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect starting ground. Three things that will transform your pasta immediately: salt your pasta water aggressively — it should taste like the sea, not just 'a little salty.' Second, save pasta water before draining — the starchy water is what emulsifies sauces and makes them coat the pasta. Third, finish your pasta in the sauce, not the colander — add the pasta directly to the sauce with a cup of pasta water, toss over high heat for 60-90 seconds. That is how restaurant pasta gets its glossy clinging sauce. What is your current best pasta dish?"
+    },
+    {
+      "role": "user",
+      "content": "Probably carbonara. But mine always ends up scrambled."
+    },
+    {
+      "role": "assistant",
+      "content": "Classic carbonara problem — entirely about temperature management. Scrambled carbonara means the eggs hit a surface that is too hot. Fix: take the pan completely off the heat before adding the egg mixture. The residual heat from the pasta and pan is enough to cook the eggs to a creamy sauce, but there is no direct heat to scramble them. Also: your egg mixture should be room temperature, not cold from the fridge. Mix eggs with pecorino and black pepper while the pasta cooks, then take the pan completely off heat and add your egg mixture while tossing vigorously. Try it this week — you will nail it."
+    }
+  ]
+}

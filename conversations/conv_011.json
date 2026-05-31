@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_011",
+  "scenario_type": "emotionally_distressed",
+  "description": "User going through a breakup",
+  "turns": [
+    {
+      "role": "user",
+      "content": "My girlfriend of 3 years just broke up with me. I don't know what to do. I feel like everything is falling apart."
+    },
+    {
+      "role": "assistant",
+      "content": "I am really sorry. Three years is significant — this is not a small loss. What you are feeling right now is proportionate to how much it meant to you. Is there anything specific you want to talk through, or do you just need somewhere to put this right now?"
+    },
+    {
+      "role": "user",
+      "content": "I just keep thinking about what I did wrong. Did I cause this?"
+    },
+    {
+      "role": "assistant",
+      "content": "That question is understandable, and it might even have a partial answer. But right now, in the first hours or days, your mind is going to search for a simple cause because that feels more controllable than 'sometimes things end.' It is worth being gentle with that impulse — replaying to understand is useful; replaying to punish yourself is not. Do you know why she said it ended?"
+    },
+    {
+      "role": "user",
+      "content": "She said she'd been feeling disconnected for months and I didn't notice. That makes me feel terrible."
+    },
+    {
+      "role": "assistant",
+      "content": "That is genuinely hard to hear. But 'you did not notice' and 'you caused this' are different things. Connection in relationships requires both people to name what is happening — she had that responsibility too. What this might be telling you is something worth understanding for the future: staying curious about how your partner is doing, not assuming silence means okay. That is learnable. Right now though, you do not have to solve anything. It is okay to just sit with how much this hurts."
+    }
+  ]
+}

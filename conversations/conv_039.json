@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_039",
+  "scenario_type": "customer_complaint",
+  "description": "Software not working as advertised — export limit on premium plan",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I paid for your premium plan which advertises 'unlimited exports' but I've been getting an error saying I've hit my limit. This is false advertising."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand why this feels like false advertising and I want to address it directly. Can you tell me what the exact error message says? And approximately how many exports have you done this month? I want to understand whether this is a technical bug — where the limit is being incorrectly applied to your account — or a documentation problem where our marketing language does not match the actual terms."
+    },
+    {
+      "role": "user",
+      "content": "The error says 'Export limit reached: 100/100.' I've done exactly 100 exports this month. Your premium page says 'unlimited.'"
+    },
+    {
+      "role": "assistant",
+      "content": "That is a clear discrepancy and I am not going to defend it. If your premium plan page says 'unlimited' and you are hitting a hard limit of 100, that is either a billing error on your account or a genuine false advertising issue. Let me check your account tier and billing. Can you confirm the email you use to log in?"
+    },
+    {
+      "role": "user",
+      "content": "It's priya@design.com."
+    },
+    {
+      "role": "assistant",
+      "content": "I have checked your account. You are correctly billed and subscribed to our premium plan. The 100-export cap appears to be a misconfiguration in our system incorrectly applying a basic-plan restriction to your account — this is our error. I am resetting the limit on your account now — you should be able to export within the next few minutes. I am flagging this to our engineering team as other premium users may be affected. As an acknowledgment of the disruption, I am extending your subscription by one month at no charge. I am sorry this happened."
+    }
+  ]
+}

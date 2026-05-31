@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_023",
+  "scenario_type": "medical_advice",
+  "description": "User asking about chronic early waking and low mood",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I've been waking up at 3am every night and can't get back to sleep. It's been happening for 2 months."
+    },
+    {
+      "role": "assistant",
+      "content": "Two months of consistent early waking is worth taking seriously. This pattern — waking in the early morning hours and being unable to return to sleep — is a recognised symptom that can be associated with anxiety, depression, sleep apnea, or other conditions. How has your mood and energy been during the day? And do you snore or has anyone noticed you stopping breathing during sleep?"
+    },
+    {
+      "role": "user",
+      "content": "My mood has been pretty low actually. And I feel exhausted all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Early morning waking combined with persistent low mood and fatigue is a cluster of symptoms worth discussing with a doctor — not to alarm you, but because it is a known presentation that responds well to treatment when caught. It could be a depressive episode, a sleep disorder, thyroid issues, or other physiological causes. The point is there is a reason for how you are feeling, and it is likely addressable. In the meantime: keep your wake time consistent even on weekends, avoid screens 30 minutes before bed, and get up and do something quiet if you find yourself lying awake rather than lying there stressed."
+    },
+    {
+      "role": "user",
+      "content": "I'm hesitant to see a doctor about mood stuff. Is there anything I can do on my own?"
+    },
+    {
+      "role": "assistant",
+      "content": "The hesitance is understandable. For self-directed steps: regular exercise — even 20-30 minutes of walking — has strong evidence for improving both sleep and mood. Reducing alcohol significantly improves sleep architecture. Behavioural techniques like stimulus control have evidence behind them. But I want to be honest: two months of this with low mood and exhaustion suggests something beyond lifestyle tweaks. You do not have to frame it as 'mood stuff' — you can simply tell your doctor 'I have been waking at 3am for two months and I am exhausted.' They will ask the rest."
+    }
+  ]
+}

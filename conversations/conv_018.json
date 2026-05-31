@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_018",
+  "scenario_type": "technical_coding",
+  "description": "System design — URL shortener",
+  "turns": [
+    {
+      "role": "user",
+      "content": "How would you design a URL shortener like bit.ly? I have a system design interview next week."
+    },
+    {
+      "role": "assistant",
+      "content": "Good problem to practice — interviewers want to see requirements clarification first. Functional: shorten a URL, redirect from short URL to original. Non-functional: high availability, low latency reads (reads >> writes). Back of envelope: 100M new URLs/day, 10B redirects/day — read-heavy by 100x. Core components: API layer (POST /shorten, GET /:code), a hash generation service, and a key-value store mapping short codes to original URLs."
+    },
+    {
+      "role": "user",
+      "content": "How do you generate the short codes? What algorithm?"
+    },
+    {
+      "role": "assistant",
+      "content": "Two main approaches. Option 1: Hash-based — MD5 or SHA256 the original URL, take first 6-7 characters. Simple but causes collisions. You need collision detection and retry logic. Option 2: Counter-based with Base62 encoding — maintain a global auto-incrementing counter, encode to Base62. 7 characters of Base62 gives 62^7 = ~3.5 trillion unique codes. No collision problem. The counter is a single point of failure — solve with distributed ID generators like Twitter's Snowflake or pre-generating key ranges per server."
+    },
+    {
+      "role": "user",
+      "content": "What database would you use and how do you handle the scale?"
+    },
+    {
+      "role": "assistant",
+      "content": "For the mapping store, a NoSQL key-value database like DynamoDB or Cassandra works well — the access pattern is pure key lookups, no joins needed. Add Redis as a cache in front. With 10B redirects/day you want 80-90% cache hit rate — Redis with LRU eviction handles this naturally. For further scale: geographically distributed read replicas and a CDN that can cache the redirect response itself. Always finish by discussing failure modes in interviews: if the cache goes down, the database handles it slower but correctly. If the database goes down, you need replicas and failover."
+    }
+  ]
+}

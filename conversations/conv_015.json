@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_015",
+  "scenario_type": "emotionally_distressed",
+  "description": "User anxious about an exam the next day",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have my final exam tomorrow and I feel completely unprepared. I've been studying but nothing is sticking. I feel like a failure."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling the night before is awful and almost universal — it does not mean you are actually unprepared, it means your anxiety is loud right now. 'Nothing is sticking' is a feeling, and anxiety impairs the sense that learning is happening even when it is. How much have you actually studied over the past week?"
+    },
+    {
+      "role": "user",
+      "content": "About 4-5 hours a day. But I keep blanking on practice questions."
+    },
+    {
+      "role": "assistant",
+      "content": "25-35 hours of studying is not 'completely unprepared.' Blanking on practice questions the night before is your nervous system, not your knowledge. At this point, the most useful thing is not more studying — it is protecting your retrieval ability for tomorrow. That means sleep above all else. An exhausted brain genuinely performs worse even if it holds the same information. Is there anything specific you want to quickly review, or are you mainly needing to calm down a bit?"
+    },
+    {
+      "role": "user",
+      "content": "Both I think. I feel like if I fail this I've wasted the whole semester."
+    },
+    {
+      "role": "assistant",
+      "content": "One exam is never a whole semester, and failure in one assessment is recoverable in almost every academic system. The story you are telling yourself — 'if I fail this I have wasted everything' — is catastrophising, and it is making it harder to rest and perform. Here is what I would suggest: 30 minutes of targeted review on your weakest topic only, then stop, eat something, and sleep by 11. You will perform better from a rested brain than from three more hours of anxious studying tonight."
+    }
+  ]
+}

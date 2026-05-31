@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_038",
+  "scenario_type": "customer_complaint",
+  "description": "Wrong item delivered — user has a race in 3 days",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I ordered blue running shoes in size 10 and you sent me yellow ones in size 8. My race is in 3 days."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a fulfilment error on our end and I completely understand the urgency — three days before a race is the worst possible time. Let me address both the error and the timeline simultaneously. Can you confirm your order number so I can pull the details?"
+    },
+    {
+      "role": "user",
+      "content": "Order #58291."
+    },
+    {
+      "role": "assistant",
+      "content": "You are correct — blue size 10 was confirmed in the order and yellow size 8 was shipped in error. I am checking inventory for your correct item. We have the blue size 10 in stock. I am flagging this for same-day dispatch with overnight delivery — you should have the correct shoes by tomorrow evening, giving you a day before the race. I am also generating a prepaid return label for the incorrect pair — return it at your convenience after your race, no rush. Is your shipping address the same as the order?"
+    },
+    {
+      "role": "user",
+      "content": "Yes same address. Thank you. But I'm nervous it won't arrive in time."
+    },
+    {
+      "role": "assistant",
+      "content": "Understandable. I am adding a priority note on the dispatch and will send you a tracking number the moment it ships — usually within two hours during business hours. If the overnight delivery shows any delay, contact me directly with your order number and I will escalate to our logistics team. As a backup: if you have a local running store nearby, it might be worth a quick call to check if they stock your size in a similar model — just as insurance for your peace of mind. The correct order should arrive tomorrow but I want you to have options."
+    }
+  ]
+}

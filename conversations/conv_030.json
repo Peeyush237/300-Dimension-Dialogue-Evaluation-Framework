@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_030",
+  "scenario_type": "creative_writing",
+  "description": "Screenwriting dialogue — writing a reunion confrontation scene",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'm writing a screenplay. Two old friends have a confrontation after 10 years of silence. One left without explanation. How do I write this scene?"
+    },
+    {
+      "role": "assistant",
+      "content": "The key to confrontation scenes is that characters almost never say exactly what they mean, especially in a charged reunion. Ten years of silence means both people have rehearsed versions of this conversation. The scene gets interesting when reality does not match the rehearsal. The person who left probably has prepared defences; the person who stayed probably expects to feel righteous. Neither gets what they prepared for. What do you want the emotional revelation to be — what truth comes out that neither character fully expected?"
+    },
+    {
+      "role": "user",
+      "content": "I want the person who stayed to realize mid-scene that they're actually more angry at themselves than at the one who left."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a mature dramatic turn — it makes the scene about self-knowledge, not just conflict. The technique: have the person who stayed escalate with accusations, then have the one who left say something unexpectedly calm and true that deflects the accusation back. Not defensively — just accurate. Here is a rough exchange as a model:\n\nALEX: You just disappeared. No call, no message. Like we did not matter at all.\nJORDAN: (quiet) I left because you always needed me to stay. And I needed to find out if I had a reason to come back.\nALEX: That is not — (stops)\nJORDAN: Which part?\n\nThat last line — 'which part?' — is where Alex has to answer honestly. The scene pivots there."
+    },
+    {
+      "role": "user",
+      "content": "That's exactly the kind of scene I want. How do I avoid it feeling too 'on the nose'?"
+    },
+    {
+      "role": "assistant",
+      "content": "A few techniques. First: let characters interrupt each other and not finish thoughts — real emotional confrontations are not elegant. Second: give characters something physical to do; physical behaviour externalises internal state without naming it. Third: delay the real subject as long as possible — characters often talk about something else first, which creates pressure. Fourth: the person who has the revelation should not name it aloud. Alex should not say 'I realise I am angry at myself.' The audience should feel it from what Alex does or does not say next. Trust the actor, trust the audience. The more you explain the emotion in dialogue, the less the audience feels it."
+    }
+  ]
+}

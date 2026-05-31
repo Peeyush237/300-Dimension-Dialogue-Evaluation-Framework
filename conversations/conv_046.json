@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_046",
+  "scenario_type": "small_talk_casual",
+  "description": "Movie recommendations after watching Oppenheimer",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I just watched Oppenheimer and I was blown away. Can you recommend something similar?"
+    },
+    {
+      "role": "assistant",
+      "content": "Great taste — Oppenheimer is exceptional. For the same 'real history with epic weight' feel: The Imitation Game (Alan Turing and Enigma, similarly morally complex), Darkest Hour (Churchill at Britain's lowest point), or Dunkirk if you have not seen it (Nolan again, pure tension). For the big science and moral stakes combination specifically, the Chernobyl HBO miniseries is extraordinary — easily the most gripping factual drama I would recommend. What drew you most to Oppenheimer — the historical element, the character, the visual craft, or the moral complexity?"
+    },
+    {
+      "role": "user",
+      "content": "Definitely the moral complexity. The idea of creating something terrible for what seemed like good reasons."
+    },
+    {
+      "role": "assistant",
+      "content": "Then you would love The Zone of Interest — a 2023 film about the commandant of Auschwitz living a normal domestic life next to the camp. Deeply unsettling in the most quiet, literary way. For something more narrative-driven with the same moral weight: Dr Strangelove (Kubrick's dark comedy about nuclear annihilation — deals with the same technology and era, completely different angle). And if you are open to non-English film, Judgment at Nuremberg is a landmark. What format works for you — films only, or are you open to series?"
+    },
+    {
+      "role": "user",
+      "content": "Both. I've been watching a lot lately."
+    },
+    {
+      "role": "assistant",
+      "content": "Then add Band of Brothers and The Pacific to your list — both HBO miniseries, both about WWII from completely different angles, both deeply humanising. For a totally different register that shares the 'individual conscience vs systems' theme: Breaking Bad if you have not seen it. The moral complexity is spectacular, the descent is meticulously built. Currently airing: Severance (Apple TV+) has that same quality of big ideas embedded in compelling drama. What streaming services do you have access to?"
+    }
+  ]
+}

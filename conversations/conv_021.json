@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_021",
+  "scenario_type": "medical_advice",
+  "description": "User asking about recurring chest pain",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I've been having chest pain on and off for the past week. Should I be worried?"
+    },
+    {
+      "role": "assistant",
+      "content": "Chest pain recurring for a week needs to be evaluated by a doctor — that is not something to wait on. Chest pain has a wide range of causes, some benign and some serious, and distinguishing them requires a physical examination and often an ECG. Are you having any other symptoms — shortness of breath, pain radiating to your arm or jaw, sweating, or nausea?"
+    },
+    {
+      "role": "user",
+      "content": "No other symptoms. It's more of a tightness than sharp pain. Comes and goes."
+    },
+    {
+      "role": "assistant",
+      "content": "Intermittent tightness without associated symptoms can have many causes — musculoskeletal issues, acid reflux, anxiety-related tension, or costochondritis. But 'can have benign causes' does not mean 'assume benign.' A week of recurrent chest symptoms warrants at minimum a primary care visit with an ECG. If the tightness becomes severe, comes with breathlessness, or radiates to your arm or jaw — that warrants an emergency room visit immediately, not a scheduled appointment."
+    },
+    {
+      "role": "user",
+      "content": "I've been stressed at work lately. Could that cause it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Stress can absolutely cause physical chest symptoms — anxiety and prolonged stress cause muscle tension, can trigger acid reflux, and in some cases cause functional chest pain. But stress does not rule out other causes, and 'I have been stressed' is sometimes a way we reassure ourselves away from seeking care we actually need. My honest recommendation: make the doctor's appointment regardless. If it turns out to be stress and tension, your doctor can confirm that and offer guidance. The cost of ruling out something more serious is one appointment."
+    }
+  ]
+}

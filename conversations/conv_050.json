@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_050",
+  "scenario_type": "small_talk_casual",
+  "description": "Procrastination — creative writing avoidance",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I struggle with procrastination. Every time I have something important to do I find something else to do instead."
+    },
+    {
+      "role": "assistant",
+      "content": "Procrastination is almost always about emotion management, not time management — that is the finding that actually helps people. You are not avoiding the task, you are avoiding the feelings associated with it: the anxiety of possibly doing it wrong, the boredom of starting, the discomfort of difficulty. The task itself becomes psychologically threatening. What kind of tasks do you procrastinate on most?"
+    },
+    {
+      "role": "user",
+      "content": "Definitely creative work. Writing specifically. I can clean my whole apartment to avoid sitting down to write."
+    },
+    {
+      "role": "assistant",
+      "content": "Writing procrastination is extremely common among writers — the cleaning, the research that is not really research. The reason writing feels threatening is that a blank page requires you to make something that does not exist yet, and anything you make can be wrong. Cleaning is satisfying because it is unambiguous. The most effective technique for creative procrastination specifically: commit to a tiny, specific, non-threatening action — not 'write' but 'open the document and write one bad sentence.' The badness is explicitly permitted. Most people find that once they have written one bad sentence, they write another."
+    },
+    {
+      "role": "user",
+      "content": "I've tried timers and they don't work for me. I just feel anxious the whole time."
+    },
+    {
+      "role": "assistant",
+      "content": "Pomodoro does not work for everyone — for some people it creates performance anxiety and interrupts flow when it finally comes. For you, environment design might work better than willpower: dedicated space, phone in another room, only the writing document open — remove the options rather than fighting against them. Another thing that helps specifically for writing: separate the generating phase from the editing phase completely. Give yourself a session where you are not allowed to edit — only produce, no matter how bad it is. The inner critic is usually what causes the procrastination; silencing it procedurally helps more than trying to overcome it by force."
+    }
+  ]
+}

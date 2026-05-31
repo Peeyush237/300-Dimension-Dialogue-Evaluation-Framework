@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_044",
+  "scenario_type": "educational_tutoring",
+  "description": "English grammar — when to use commas",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I never know when to use commas. I either put too many or too few. Can you help?"
+    },
+    {
+      "role": "assistant",
+      "content": "Commas serve several different purposes so let us focus on the three most important rules. Rule 1: Commas in lists. When you have three or more items in a row, put a comma after each item except the last: 'I bought apples, oranges, and bananas.' Rule 2: Commas after introductory phrases. When you start a sentence with a phrase before the main subject, use a comma: 'Before I left, I locked the door.' Rule 3: Commas with joining words. When you join two complete sentences with 'and,' 'but,' 'so,' put a comma before the joining word: 'I was tired, but I stayed.' Which of these are you most unsure about?"
+    },
+    {
+      "role": "user",
+      "content": "The third one. How do I know if I have two complete sentences?"
+    },
+    {
+      "role": "assistant",
+      "content": "A complete sentence needs both a subject (who or what is doing something) and a verb (what they are doing). Test each half by asking: 'Does this half work on its own as a sentence?' Example: 'I was tired but stayed.' — 'I was tired' is complete. 'But stayed' is not — no subject. No comma needed. Compare: 'I was tired, but I stayed.' — Both halves have their own subjects and verbs. Comma before 'but.' The mental test: cover each half. If both can stand alone, comma. If one cannot, no comma."
+    },
+    {
+      "role": "user",
+      "content": "That's actually a really helpful test. Can I try one? 'She studied hard and passed the exam.'"
+    },
+    {
+      "role": "assistant",
+      "content": "Good example. Apply the rule: 'She studied hard' — complete sentence. 'And passed the exam' — no subject, so not a complete sentence. No comma: 'She studied hard and passed the exam.' If you changed it to 'She studied hard, and she passed the exam' — now the second half has its own subject 'she,' so the comma is needed. That is the difference. Whenever you are about to put a comma before 'and,' 'but,' or 'so,' do the two-hand test. It becomes automatic quickly."
+    }
+  ]
+}

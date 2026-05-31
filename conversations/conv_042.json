@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_042",
+  "scenario_type": "educational_tutoring",
+  "description": "History student confused about causes of WWI",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I always get confused about what actually caused WWI. Was it just the assassination?"
+    },
+    {
+      "role": "assistant",
+      "content": "The assassination of Archduke Franz Ferdinand is the spark, but the fuel had been building for decades. Think of it this way: if you have a room full of gunpowder and someone lights a match, it is not really accurate to say the match caused the explosion. The assassination was the match. The gunpowder was everything else. The four main elements: militarism (European arms race, especially Germany and Britain building massive navies), alliance systems (Europe divided into two armed camps so any local conflict could drag in everyone), imperialism (competition for colonies creating enormous tensions), and nationalism (especially in the Balkans where ethnic groups wanted their own states, threatening the Austro-Hungarian Empire)."
+    },
+    {
+      "role": "user",
+      "content": "Why did the assassination make everyone go to war though? I still don't get why that one event triggered everything."
+    },
+    {
+      "role": "assistant",
+      "content": "The alliance system is the key mechanical explanation. Austria-Hungary blamed Serbia and declared war. Russia mobilised to defend Serbia (a fellow Slavic nation). Germany, allied with Austria-Hungary, declared war on Russia. France was allied with Russia, so Germany declared war on France. Germany invaded Belgium to reach France quickly, and Britain had guaranteed Belgian neutrality, so Britain declared war on Germany. In about six weeks, a local Balkan conflict became a continental war. The alliance system was designed to deter war through mutual assured destruction — ironically, it made escalation automatic. Does that chain of events make the sequence clearer?"
+    },
+    {
+      "role": "user",
+      "content": "Yes! Why do textbooks not just explain it like that?"
+    },
+    {
+      "role": "assistant",
+      "content": "Textbooks often prioritise comprehensiveness over clarity — they give you everything at once rather than building a picture step by step. The MAIN acronym that gets taught is actually useful, but it is presented as a list to memorise rather than an explanation of how those things interacted to make war likely and then inevitable. For exams: know that the assassination was the immediate cause, understand that the alliance system explains the rapid escalation, and know MAIN as the long-term structural causes. You should be able to answer most essay questions with that framework."
+    }
+  ]
+}

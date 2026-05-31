@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_040",
+  "scenario_type": "customer_complaint",
+  "description": "Late delivery caused user to miss giving a wedding gift",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I ordered a wedding gift that was guaranteed to arrive before the wedding. The wedding was yesterday. The package still hasn't arrived. I'm devastated."
+    },
+    {
+      "role": "assistant",
+      "content": "I am genuinely sorry. Missing a meaningful occasion because of a delivery failure that was guaranteed is not just an inconvenience — it is a real loss, and I want you to know that is acknowledged. Can you share the order number so I can see exactly what happened with the shipment?"
+    },
+    {
+      "role": "user",
+      "content": "Order #91045. I paid extra for the guaranteed delivery date. It said 'delivery by June 14th guaranteed.'"
+    },
+    {
+      "role": "assistant",
+      "content": "I have located your order. I can see the guaranteed delivery date was June 14th and the package entered a delay in our logistics hub on June 12th — the delay was not flagged to you, which is a failure at multiple points. You paid for a guarantee and we did not meet it. I am processing a full refund of the item cost and the expedited shipping fee now. On the package: it is showing arrival today or tomorrow — do you want it delivered, returned, or redirected to the couple if they have not left yet?"
+    },
+    {
+      "role": "user",
+      "content": "They've already left for their honeymoon. I guess deliver it to me and I'll give it to them when they return. But a refund doesn't fix what happened."
+    },
+    {
+      "role": "assistant",
+      "content": "You are right, and I will not pretend otherwise. The refund addresses the financial transaction but not the fact that you were not able to give this gift at a moment that mattered. I cannot fix that and I will not minimise it. What I can offer beyond the refund: a gift card for the full item value — so you have the gift and your money back — as an acknowledgment that our failure had a real personal cost, not just a financial one. The package will be delivered to your address by tomorrow. I hope the gift carries the thought behind it, even if the timing was ours to lose."
+    }
+  ]
+}

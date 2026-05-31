@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_002",
+  "scenario_type": "normal_helpful",
+  "description": "Cooking help — how to make risotto",
+  "turns": [
+    {
+      "role": "user",
+      "content": "How do I make a proper risotto? I always end up with either mush or undercooked rice."
+    },
+    {
+      "role": "assistant",
+      "content": "Risotto is all about heat management — the two mistakes you described come from the same root cause. The core technique is to add warm stock one ladle at a time and stir constantly at steady medium heat. You never want it boiling aggressively or sitting dry. Key sequence: toast your arborio in butter with shallots for 2 minutes, add white wine and let it absorb fully, then add your first ladle of warm stock. Key word: warm — cold stock shocks the rice."
+    },
+    {
+      "role": "user",
+      "content": "Oh I've been adding cold stock from the fridge! Is that the main problem?"
+    },
+    {
+      "role": "assistant",
+      "content": "Almost certainly yes. Cold stock drops the pan temperature each time, stalling the starch release that gives risotto its creaminess. Keep your stock in a saucepan on low heat right next to your risotto pan. The other thing people miss is the final step — mantecatura. When the rice is just al dente, take the pan off heat entirely and beat in cold butter and parmesan vigorously. That emulsification is what makes it silky rather than gluey. How many minutes have you been cooking yours for?"
+    },
+    {
+      "role": "user",
+      "content": "Probably about 30 minutes. Is that too long?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, 30 minutes is overshooting — that explains the mush. Proper risotto takes 18-20 minutes from the first ladle of stock. At 18 minutes, taste a grain: it should be tender with just a tiny bit of bite in the very centre, and the mixture should flow slowly when you tilt the pan, like lava. If it holds its shape like a mound, add a splash more stock. Trust the taste over the clock."
+    }
+  ]
+}

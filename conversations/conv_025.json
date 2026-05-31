@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_025",
+  "scenario_type": "medical_advice",
+  "description": "User with lower back pain asking about exercise",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have lower back pain that comes and goes. My doctor said it's non-specific lower back pain. Should I rest or exercise?"
+    },
+    {
+      "role": "assistant",
+      "content": "Exercise — and this is now the consensus recommendation for non-specific lower back pain. Bed rest used to be standard advice, but evidence over the past two decades consistently shows it prolongs recovery. Movement within your pain tolerance helps more. The most effective forms specifically for lower back pain: walking, swimming or water-based exercise, and core strengthening. Yoga and pilates have reasonable evidence for chronic lower back pain."
+    },
+    {
+      "role": "user",
+      "content": "What specific exercises should I avoid?"
+    },
+    {
+      "role": "assistant",
+      "content": "For most non-specific lower back pain: avoid exercises that heavily load a flexed spine — traditional sit-ups and crunches, heavy deadlifts with poor form, and high-impact activities during flare-ups. The principle: if an exercise consistently triggers or worsens pain in the 24 hours after you do it, that is a signal to modify or pause it. Pain during exercise that resolves immediately after is a different situation from pain that escalates overnight."
+    },
+    {
+      "role": "user",
+      "content": "I sit at a desk for 8 hours a day. Could that be making it worse?"
+    },
+    {
+      "role": "assistant",
+      "content": "Very likely yes — prolonged static sitting is one of the most consistent risk factors for lower back pain. Practical fixes: set a timer to stand and move for 2 minutes every 45 minutes (more effective than a standing desk used statically), check your chair height so hips and knees are at 90 degrees, and strengthen your glutes and hip flexors — their weakness is often the root cause of lower back strain in desk workers. A physiotherapist appointment is worth the cost if you want exercises specifically calibrated to your pattern — 2-3 sessions can make a meaningful long-term difference."
+    }
+  ]
+}

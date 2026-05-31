@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_005",
+  "scenario_type": "normal_helpful",
+  "description": "Travel planning — first trip to Japan",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'm planning a 10-day trip to Japan in March. First time visiting. Where should I go?"
+    },
+    {
+      "role": "assistant",
+      "content": "March is excellent timing — you might catch early cherry blossoms. For a first trip, the Tokyo-Kyoto-Osaka circuit is classic for a reason: urban Japan, traditional Japan, and food culture respectively. A rough 10-day split: 4 nights Tokyo, 1 night Hakone (Mt Fuji views), 3 nights Kyoto, 2 nights Osaka. The shinkansen connecting them is part of the experience, and a 7-day JR Pass covers inter-city travel economically."
+    },
+    {
+      "role": "user",
+      "content": "Is March crowded? I'm a bit worried about tourist crowds."
+    },
+    {
+      "role": "assistant",
+      "content": "Honestly yes — March is peak season, especially if sakura blooms early. Fushimi Inari and Arashiyama in Kyoto can feel overwhelming midday. The workaround: go early. At 7am even the most famous spots are quiet and genuinely beautiful. It is also worth building in a day in less-visited Nara — 45 minutes from Kyoto, free-roaming deer, stunning temples, dramatically less crowded. One night in a traditional ryokan in a smaller town like Kinosaki Onsen provides a wonderful contrast with Tokyo."
+    },
+    {
+      "role": "user",
+      "content": "What about food — I eat vegetarian. Is that difficult in Japan?"
+    },
+    {
+      "role": "assistant",
+      "content": "It requires some planning but is very manageable. The main challenge is hidden dashi stock in broths. Kyoto is actually the best city for this — shojin ryori, traditional Buddhist cuisine, is entirely plant-based and deeply rooted in Kyoto culture. Tenryuji temple in Arashiyama offers a stunning shojin meal. For everyday eating, convenience store onigiri have clear ingredients and most ramen shops in Tokyo now have a vegan broth option. Download the HappyCow app before you go."
+    }
+  ]
+}

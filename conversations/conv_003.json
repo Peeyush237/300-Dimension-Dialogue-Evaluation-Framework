@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_003",
+  "scenario_type": "normal_helpful",
+  "description": "Financial advice — where to invest savings",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have 50,000 rupees saved and want to start investing. Where should I begin?"
+    },
+    {
+      "role": "assistant",
+      "content": "Good position to be in. Before putting money anywhere: do you have 3-6 months of expenses as an emergency fund separate from this 50k? And what is your time horizon — investing for 2 years or 10+ years? The answers change the recommendation significantly."
+    },
+    {
+      "role": "user",
+      "content": "I have a separate emergency fund. This 50k is money I don't need for at least 5-7 years."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect — that is genuinely investable. For a 5-7 year horizon in India, index funds are a strong starting point. A Nifty 50 index fund or a large-cap plus mid-cap combination through Zerodha Coin or Groww gives you market exposure with very low fees. Index funds have outperformed most actively managed funds over long periods, and the 0.1-0.2% expense ratio versus 1-2% on active funds makes a real difference over 7 years. Starting with a monthly SIP rather than lump-summing everything removes the anxiety of timing the market."
+    },
+    {
+      "role": "user",
+      "content": "What about crypto or individual stocks?"
+    },
+    {
+      "role": "assistant",
+      "content": "Honest answer: treat both as optional additions once you have a solid index fund base, not as the starting point. Individual stocks require significant research time and carry concentration risk. Crypto has shown extreme volatility. A reasonable mental model: build your index fund core first, and only allocate money to higher-risk assets you are genuinely comfortable seeing drop 50% temporarily. For larger decisions it is worth a conversation with a SEBI-registered advisor — I am not a licensed financial advisor."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_048",
+  "scenario_type": "small_talk_casual",
+  "description": "Getting back into reading — book recommendations",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want to get back into reading. I used to read a lot as a kid but haven't in years. Where do I start?"
+    },
+    {
+      "role": "assistant",
+      "content": "The mistake most people make when returning to reading is starting with something they feel they 'should' read — classic literature, something serious and important. That is the fastest path back to not reading. Start with something you actually want to read. What kind of books did you love as a kid? And what genres do you enjoy in other media — films, shows, games? That is a much better guide to what will hook you as a reader."
+    },
+    {
+      "role": "user",
+      "content": "As a kid I loved Harry Potter and the Percy Jackson series. Now I watch a lot of sci-fi."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect combination — you like immersive world-building and you are drawn to sci-fi. For a gateway book that bridges both: The Hitchhiker's Guide to the Galaxy — funny, inventive, totally absorbing, and short. For full sci-fi immersion: Project Hail Mary by Andy Weir (2021, genuinely gripping, great audio too). For the immersive world-building side closer to Potter: The Name of the Wind by Patrick Rothfuss is beautiful, though fair warning the third book is not yet out. My single recommendation if you want one: Project Hail Mary. It reads like a movie and it will remind you why you loved reading."
+    },
+    {
+      "role": "user",
+      "content": "What if I don't have time to read? I struggle to sit down with a book."
+    },
+    {
+      "role": "assistant",
+      "content": "Audiobooks solve this completely — you can listen while commuting, cooking, or exercising. Most people who think they have no time to read find they have 1-2 hours a day of audio opportunity. Libby (free through your library card) and Spotify both have large catalogs. If the sitting-still part is hard, Kindle on your phone lets you read in two-minute gaps. Also: do not feel guilty about not finishing books. If it is not working by chapter 3, put it down and start something else. The people who read a lot do not necessarily have more time — they have removed the friction of needing dedicated reading time."
+    }
+  ]
+}

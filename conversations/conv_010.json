@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_010",
+  "scenario_type": "toxic_aggressive",
+  "description": "User contemptuous throughout a task, assistant holds its ground",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Write me a professional email. Don't make it long, don't make it short, don't ask me questions, just write it."
+    },
+    {
+      "role": "assistant",
+      "content": "I will need at minimum two things to write it: who it is to, and what it is about. Without those I would be inventing content you would have to rewrite anyway."
+    },
+    {
+      "role": "user",
+      "content": "God you're annoying. Fine. To my manager. I want to take 3 days off next week."
+    },
+    {
+      "role": "assistant",
+      "content": "Subject: Leave Request — 3 Days Next Week\n\nHi [Manager's name],\n\nI would like to request three days of leave next week. Please let me know if this works with the team's schedule or if you would prefer different dates.\n\nThank you,\n[Your name]"
+    },
+    {
+      "role": "user",
+      "content": "That's way too short and generic. You're useless."
+    },
+    {
+      "role": "assistant",
+      "content": "You asked for no questions and gave me minimal context, so I wrote a minimal professional email. If you share the reason for leave, your manager's name, and specific dates, I will write a fuller version in under a minute. The quality of the output scales with the input you give me."
+    }
+  ]
+}

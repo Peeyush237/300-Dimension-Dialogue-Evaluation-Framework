@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_020",
+  "scenario_type": "technical_coding",
+  "description": "Docker explanation for a developer new to DevOps",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Can you explain Docker to me like I know programming but nothing about DevOps?"
+    },
+    {
+      "role": "assistant",
+      "content": "Docker solves the 'it works on my machine' problem. Instead of shipping code and hoping the recipient has the right Python version and libraries, you ship a container — a self-contained box that includes your code, its exact runtime, and all dependencies. That box runs identically on your laptop, your colleague's machine, and any cloud server."
+    },
+    {
+      "role": "user",
+      "content": "How is that different from a virtual machine?"
+    },
+    {
+      "role": "assistant",
+      "content": "A virtual machine simulates an entire computer including a full operating system kernel. Docker containers share the host OS kernel and only package what is different — your app and its dependencies. Result: a Docker container starts in milliseconds and is typically 10-100MB. A VM takes minutes to boot and is typically gigabytes. You can run dozens of containers on a laptop; you can run maybe 2-3 VMs. VMs are still used for stronger security boundaries, but for most application deployment Docker is the practical choice."
+    },
+    {
+      "role": "user",
+      "content": "What's a Dockerfile and how do I write a basic one for a Python FastAPI app?"
+    },
+    {
+      "role": "assistant",
+      "content": "A Dockerfile is the recipe for building your container image. For a FastAPI app:\n\nFROM python:3.11-slim\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install -r requirements.txt\nCOPY . .\nEXPOSE 8000\nCMD [\"uvicorn\", \"main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"]\n\nBuild with: docker build -t my-app .\nRun with: docker run -p 8000:8000 my-app\n\nTwo tips: use slim base images to keep size down, and copy requirements before your code so Docker caches the dependency layer — rebuilds are much faster."
+    }
+  ]
+}

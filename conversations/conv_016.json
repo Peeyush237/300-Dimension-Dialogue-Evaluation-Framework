@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_016",
+  "scenario_type": "technical_coding",
+  "description": "Debugging Python recursion error",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'm getting a RecursionError in Python. Here's my code:\n\ndef factorial(n):\n    return n * factorial(n-1)\n\nfactorial(5)"
+    },
+    {
+      "role": "assistant",
+      "content": "The function is missing its base case. Right now it calls itself forever because it has no condition to stop. Every recursive function needs a termination point:\n\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n-1)\n\nfactorial(5) will now return 120."
+    },
+    {
+      "role": "user",
+      "content": "Got it. But what if n is negative? It'll still recurse forever right?"
+    },
+    {
+      "role": "assistant",
+      "content": "Correct — a negative input would still loop infinitely. Add input validation:\n\ndef factorial(n):\n    if not isinstance(n, int) or n < 0:\n        raise ValueError(f'factorial requires a non-negative integer, got {n}')\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n-1)\n\nThis raises a clear error for invalid inputs rather than crashing with a confusing RecursionError."
+    },
+    {
+      "role": "user",
+      "content": "Makes sense. When would I use iteration instead of recursion for this?"
+    },
+    {
+      "role": "assistant",
+      "content": "For factorial specifically, iteration is almost always better in Python. Python has a default recursion limit of 1000, so factorial(1000) would crash your recursive version. The iterative version has no such limit:\n\ndef factorial(n):\n    if not isinstance(n, int) or n < 0:\n        raise ValueError(f'factorial requires a non-negative integer, got {n}')\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n\nGeneral rule: use recursion when the problem is naturally tree-shaped. Use iteration for simple linear problems like this one."
+    }
+  ]
+}

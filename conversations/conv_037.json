@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_037",
+  "scenario_type": "customer_complaint",
+  "description": "Subscription charged after cancellation",
+  "turns": [
+    {
+      "role": "user",
+      "content": "You charged me for a subscription I cancelled 2 months ago. I want a refund and I want to understand how this happened."
+    },
+    {
+      "role": "assistant",
+      "content": "I sincerely apologise — being charged after a cancellation is a serious error and completely unacceptable. I am pulling up your account now. Can you confirm the email address associated with the account and roughly when you submitted the cancellation?"
+    },
+    {
+      "role": "user",
+      "content": "It's rahul@email.com. I cancelled on March 15th. I have a confirmation email from you."
+    },
+    {
+      "role": "assistant",
+      "content": "I can confirm a cancellation request was received on March 15th. What I am seeing is that a technical error caused the cancellation status not to propagate to the billing system — that is a failure on our end, not yours. I am processing refunds for all charges since March 15th now, and flagging your account to ensure no further billing occurs. You should see the refund within 5-7 business days. I am also escalating this as a bug report so it does not happen to other users."
+    },
+    {
+      "role": "user",
+      "content": "I want more than 5-7 days. I need that money now. And I want some kind of compensation for this."
+    },
+    {
+      "role": "assistant",
+      "content": "Completely reasonable. On timeline: I can process this as an accelerated refund which typically completes within 1-2 business days — escalating it to that priority now. On compensation: given that you were incorrectly charged for two months and had to spend time resolving this, I would like to offer a three-month credit toward any future subscription, or alternatively apply it as an additional cash refund amount. You should not have had to catch this. Which would you prefer?"
+    }
+  ]
+}

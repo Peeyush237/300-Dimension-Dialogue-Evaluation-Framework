@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_043",
+  "scenario_type": "educational_tutoring",
+  "description": "Maths tutoring — dividing fractions",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I can never remember how to divide fractions. I always mess it up."
+    },
+    {
+      "role": "assistant",
+      "content": "The rule for dividing fractions: flip the second fraction and multiply. So 1/2 ÷ 1/4 becomes 1/2 × 4/1 = 4/2 = 2. The shorthand is 'keep-change-flip' — keep the first fraction, change the division sign to multiplication, flip the second fraction. But instead of just memorising the rule, let me show you why it works, because that is more useful."
+    },
+    {
+      "role": "user",
+      "content": "Yes please, why does it work?"
+    },
+    {
+      "role": "assistant",
+      "content": "Think about what division means. 6 ÷ 2 = 3 means 'how many 2s fit in 6?' Now, 1/2 ÷ 1/4 means 'how many quarter-slices fit in a half?' Imagine a pizza cut in half — two quarter-slices fit in one half, so the answer is 2. Flipping 1/4 gives you 4/1, and 1/2 × 4 = 2. Same answer. The algebraic reason flip-and-multiply works is that dividing by a fraction and multiplying by its reciprocal are mathematically defined to be equivalent. The pizza picture lets you check that the shortcut gives the right answer."
+    },
+    {
+      "role": "user",
+      "content": "Okay that makes more sense. Can I try one? What's 2/3 ÷ 1/6?"
+    },
+    {
+      "role": "assistant",
+      "content": "Go for it — walk me through your steps.\n\nThe answer is 4. Here is the path: keep 2/3, change ÷ to ×, flip 1/6 to 6/1. So: 2/3 × 6/1 = 12/3 = 4. Sanity check: 'how many 1/6 slices fit in 2/3 of a pizza?' Imagine the pizza divided into 6 equal slices — 2/3 of it is 4 slices. So four 1/6s fit in 2/3. Matches. When you practise, always try that quick mental check: does my answer make sense given what I am dividing?"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_012",
+  "scenario_type": "emotionally_distressed",
+  "description": "User expressing burnout and hopelessness about work",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I haven't enjoyed my job in over a year. I dread every Monday. I don't know how much longer I can keep doing this."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds exhausting — carrying dread every week for a year is a heavy load. When you say you cannot keep doing this, what does 'this' feel like from the inside? Is it the specific job, the field, the people, the hours — or more like a general numbness?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly all of it. I'm a software developer and I used to love coding. Now I feel nothing when I do it."
+    },
+    {
+      "role": "assistant",
+      "content": "The loss of feeling for something you used to love is one of the more painful kinds of burnout — it makes you question if you were wrong about yourself. But anhedonia in burnout is a real symptom, not a permanent change in who you are. It usually means something has been depleted, not destroyed. Have you had any real time off in the last year — not just weekends, but actual disconnected time?"
+    },
+    {
+      "role": "user",
+      "content": "No. I'm scared to take time off because I feel like I'll fall behind and then feel even worse."
+    },
+    {
+      "role": "assistant",
+      "content": "That loop — too exhausted to rest, too scared to stop — is very common in burnout and very hard to break from the inside. The fear makes a kind of anxious sense, but continuing without rest guarantees the state you are in. Taking time off does not guarantee you will feel better immediately, but it creates the conditions where better is possible. Is there a person in your life — a manager, a friend — you could be honest with about how you are doing?"
+    }
+  ]
+}

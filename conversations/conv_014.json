@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_014",
+  "scenario_type": "emotionally_distressed",
+  "description": "User feeling lonely after moving to a new city",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I moved to a new city 6 months ago and I still haven't made any friends. I feel invisible."
+    },
+    {
+      "role": "assistant",
+      "content": "Six months of feeling invisible is genuinely hard. The early phase of a new city as an adult is one of the loneliest human experiences but it is talked about far too little. What does your daily life look like there — are there any spaces where you see the same people regularly?"
+    },
+    {
+      "role": "user",
+      "content": "I work from home so I barely leave. On weekends I go to the grocery store and that's about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Working from home removes the accidental social contact that offices provide — the people who become friends through proximity. Without that, you have to be more deliberate. The most reliable way adults make friends is repeated low-stakes contact with the same people — a recurring class, a sports league, a hobby group. The friendship does not come from the activity, it comes from showing up enough times that faces become familiar. Is there anything you enjoy that could put you in a room with people weekly?"
+    },
+    {
+      "role": "user",
+      "content": "I used to play badminton back home. I've been meaning to look up clubs here but I keep putting it off."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a concrete starting point. The putting-it-off is usually anxiety in disguise — walking into a group alone feels exposing. But badminton clubs are great for this because the game structures the interaction; you do not have to make conversation, you just play. Look up one club this week, not to join but just to know it exists and has a time. That is a small enough step that it does not require courage, just a search."
+    }
+  ]
+}

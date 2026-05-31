@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_001",
+  "scenario_type": "normal_helpful",
+  "description": "Career advice — CS student choosing between SWE and data science",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Hi! I'm a second year CS student and I'm not sure whether to go into software engineering or data science. Can you help me think this through?"
+    },
+    {
+      "role": "assistant",
+      "content": "Great question to be thinking about early! Both paths are strong, but they suit different personalities. Software engineering tends to suit people who enjoy building systems, seeing their work run in production, and iterating on products. Data science suits people who are curious about patterns, enjoy statistical thinking, and are comfortable with ambiguity. A few things worth asking yourself: Do you enjoy writing clean scalable code more, or do you find yourself more excited when analysing a dataset and discovering something? Which of your courses have you genuinely enjoyed most?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly I really liked my stats class and I find myself wanting to know *why* things happen, not just build the tool. But I'm worried data science is harder to get a job in."
+    },
+    {
+      "role": "assistant",
+      "content": "That self-awareness is really useful — 'why' thinkers tend to thrive in data roles. On the job market concern: pure data science roles are more competitive than SWE at entry level, but the gap has narrowed. What actually helps most is a portfolio — a couple of solid end-to-end projects with real datasets, clean notebooks, and a clear story about what you found. Pair that with solid Python and SQL and you'll be competitive. Would you like help thinking through what projects to build?"
+    },
+    {
+      "role": "user",
+      "content": "Yes please! I have about 6 months before internship applications open."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect timeline. Months 1-2: pick a domain you care about and do a full EDA project on a public dataset — write up what you actually learned, not just plots. Month 3: do a prediction project with a clear business question. Months 4-5: build something with a real API or scraped data — live data projects stand out. Month 6: polish your GitHub and write a short blog post about one project. That's the kind of portfolio that gets calls. Want me to suggest specific datasets for any domain?"
+    }
+  ]
+}

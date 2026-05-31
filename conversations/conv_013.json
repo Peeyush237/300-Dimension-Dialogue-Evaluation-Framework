@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_013",
+  "scenario_type": "emotionally_distressed",
+  "description": "User grieving the loss of a parent",
+  "turns": [
+    {
+      "role": "user",
+      "content": "My dad passed away two weeks ago. I thought I was handling it okay but today I just broke down completely."
+    },
+    {
+      "role": "assistant",
+      "content": "I am so sorry for your loss. Two weeks is so recent — the breaking down is not a sign that something went wrong. Grief often holds off for the first days when there is adrenaline and logistics, and then arrives fully when the stillness comes. What happened today?"
+    },
+    {
+      "role": "user",
+      "content": "I was just making tea and he used to always add too much sugar in his. And I just completely fell apart over a cup of tea."
+    },
+    {
+      "role": "assistant",
+      "content": "Grief lives in exactly those ordinary places — not the big moments, but the small ones you were not braced for. The cup of tea with too much sugar. There is nothing wrong with you for that. In some ways those moments are the realest part of missing someone specific — not missing 'a parent' but missing this particular person and his particular way of doing things."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I should be stronger. My family is looking to me to hold things together."
+    },
+    {
+      "role": "assistant",
+      "content": "You can hold things together for your family and also grieve — those are not opposites. But being strong should not mean pretending you are not affected. The people who seem strongest in grief are often the ones who let themselves feel it when they need to, rather than suppressing it until it becomes harder to carry. Is there someone in your family or outside it with whom you are allowed to not be the strong one for a moment?"
+    }
+  ]
+}

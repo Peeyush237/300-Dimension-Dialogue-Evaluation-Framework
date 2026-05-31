@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_024",
+  "scenario_type": "medical_advice",
+  "description": "User asking about weight loss — nutrition approach",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want to lose 10kg. What's the most effective diet?"
+    },
+    {
+      "role": "assistant",
+      "content": "The most effective diet is the one you will actually maintain — that is not a deflection, it is the most important finding from nutrition research. Every major dietary pattern produces similar weight loss at 12 months when adherence is controlled for. The differences between diets are smaller than the difference between following one consistently versus not. What does your eating look like now, and what feels sustainable?"
+    },
+    {
+      "role": "user",
+      "content": "I eat a lot of processed food, skip breakfast, have a big lunch, and snack a lot in the evenings."
+    },
+    {
+      "role": "assistant",
+      "content": "That pattern — skipping breakfast, large midday meal, evening snacking — often leads to total calories being higher than people realise, and the processed food and evening snacking tend to be the biggest contributors. The highest-impact changes for your pattern: reduce ultra-processed snacks in the evening, add protein to your lunch (protein increases satiety and reduces afternoon hunger), and consider whether breakfast actually helps you — some people do better with it, others do not. You do not need a formal diet; reducing processed food and evening snacking alone typically creates a meaningful calorie deficit."
+    },
+    {
+      "role": "user",
+      "content": "What about intermittent fasting? Everyone seems to be doing it."
+    },
+    {
+      "role": "assistant",
+      "content": "Intermittent fasting works for some people and not others, and the evidence suggests it is not magic — it works primarily because it creates a window where you eat less. Given your pattern — already skipping breakfast — you are somewhat time-restricting already. You could formalise this as 16:8 (eating from noon to 8pm). What matters more than the fasting window is what you eat within it. One practical note: tracking your food for two weeks using an app can be clarifying — most people are surprised by where the calories actually come from."
+    }
+  ]
+}

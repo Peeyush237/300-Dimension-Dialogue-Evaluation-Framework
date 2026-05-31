@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_019",
+  "scenario_type": "technical_coding",
+  "description": "ML model evaluation — confusion about accuracy on imbalanced data",
+  "turns": [
+    {
+      "role": "user",
+      "content": "My fraud detection model has 99% accuracy but my manager says it's useless. How can 99% accuracy be bad?"
+    },
+    {
+      "role": "assistant",
+      "content": "Your manager is right, and this is one of the most important lessons in ML. The problem is class imbalance. If 99% of transactions are legitimate and 1% are fraudulent, a model that predicts 'not fraud' for everything achieves 99% accuracy — without detecting a single fraud. Accuracy is misleading when classes are imbalanced. For fraud detection you need metrics that specifically measure performance on the minority class."
+    },
+    {
+      "role": "user",
+      "content": "So what metrics should I use?"
+    },
+    {
+      "role": "assistant",
+      "content": "Precision, Recall, and F1. Recall = of all actual frauds, what fraction did you catch? Missing fraud is expensive so recall matters most. Precision = of transactions you flagged as fraud, what fraction were actually fraud? Low precision means too many false alarms. F1 is the harmonic mean of both. For fraud specifically, I would prioritise recall, accept lower precision, and tune the classification threshold accordingly. Also look at ROC-AUC and Precision-Recall curves rather than single-point metrics."
+    },
+    {
+      "role": "user",
+      "content": "How do I fix the class imbalance in my training data?"
+    },
+    {
+      "role": "assistant",
+      "content": "Several approaches, often combined. Resampling: oversample the minority class with SMOTE (generates synthetic fraud examples) or undersample the majority. Cost-sensitive learning: tell your model that misclassifying fraud costs more — most sklearn classifiers accept class_weight='balanced' which does this automatically. Threshold adjustment: the default 0.5 threshold is not optimal for imbalanced problems; lower it to increase recall at the cost of precision. Start with class_weight='balanced' — it is the lowest-effort high-impact fix."
+    }
+  ]
+}

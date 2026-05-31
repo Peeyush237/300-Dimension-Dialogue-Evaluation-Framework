@@ -1,0 +1,31 @@
+{
+  "conversation_id": "conv_017",
+  "scenario_type": "technical_coding",
+  "description": "SQL query optimisation — missing index",
+  "turns": [
+    {
+      "role": "user",
+      "content": "My SQL query is taking 45 seconds to run on a table with 2 million rows. SELECT * FROM orders WHERE customer_email = 'test@example.com'"
+    },
+    {
+      "role": "assistant",
+      "content": "45 seconds for that query on 2M rows is a classic missing index problem. The database is doing a full table scan — reading every row to find matches. Fix:\n\nCREATE INDEX idx_orders_customer_email ON orders(customer_email);\n\nAfter this the same query should run in milliseconds. Run EXPLAIN before and after to see the query plan change from 'Seq Scan' to 'Index Scan'."
+    },
+    {
+      "role": "user",
+      "content": "I also have WHERE clauses on order_date and status frequently. Should I create separate indexes for each?"
+    },
+    {
+      "role": "assistant",
+      "content": "Separate single-column indexes help, but if you frequently filter on combinations like WHERE customer_email = ? AND status = ?, a composite index is more efficient:\n\nCREATE INDEX idx_orders_email_status ON orders(customer_email, status);\n\nColumn order matters: put the most selective column first (most unique values), and put equality conditions before range conditions. So email first (high cardinality), then status (low cardinality). A range filter like order_date > '2024-01-01' should go last."
+    },
+    {
+      "role": "user",
+      "content": "What about SELECT *? I've heard that's bad practice."
+    },
+    {
+      "role": "assistant",
+      "content": "Correct — SELECT * has two problems. First, it retrieves all columns even if you only need two, increasing I/O and memory. Second, it cannot use index-only scans. If your index covers all columns you need, PostgreSQL can answer the query from the index alone — but SELECT * forces it to go back to the heap. Always name your columns explicitly. SELECT customer_email, order_date, status FROM orders WHERE customer_email = ? is faster, clearer, and more resilient to schema changes."
+    }
+  ]
+}
