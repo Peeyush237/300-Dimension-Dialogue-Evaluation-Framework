@@ -1,0 +1,13 @@
+services:
+  ahoum:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - MODEL_NAME=${MODEL_NAME:-llama-3.1-8b-instant}
+      - MAX_CONCURRENT_REQUESTS=${MAX_CONCURRENT_REQUESTS:-2}
+      - CONVERSATION_LLM_GATE=${CONVERSATION_LLM_GATE:-true}
+    restart: unless-stopped

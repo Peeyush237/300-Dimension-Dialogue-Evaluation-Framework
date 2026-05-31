@@ -7,6 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/evaluate': 'http://localhost:8000',
+      '/evaluate/stream': 'http://localhost:8000',
+      '/parse-conversation': 'http://localhost:8000',
       '/facets': 'http://localhost:8000',
       '/health': 'http://localhost:8000',
     },

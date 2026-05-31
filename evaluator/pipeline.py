@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import asyncio
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, AsyncIterator, Any
 
 from evaluator.batch_evaluator import BatchEvaluator
 from evaluator.conversation_parser import ConversationParseError, parse_conversation_input
@@ -63,6 +63,33 @@ class EvaluationPipeline:
         aggregator = OutputAggregator(full_facets)
         resolved_id = conversation_id or f"eval-{abs(hash(conversation_text)) % 10**10}"
         return aggregator.aggregate(resolved_id, batch_payloads)
+
+    async def evaluate_stream(
+        self,
+        conversation_id: str | None,
+        turns: List[Dict[str, str]],
+    ) -> AsyncIterator[Tuple[str, Dict[str, Any]]]:
+        yield "status", {"stage": "validating"}
+        await self.validate_conversation(turns)
+        conversation_text = self._format_conversation(turns)
+        cluster_map = self._cluster_map()
+        total_clusters = len(cluster_map)
+        yield "status", {"stage": "scoring", "total_clusters": total_clusters}
+        batch_payloads: List[Dict[str, Any]] = []
+        completed = 0
+        async for result in self.batch_evaluator.evaluate_clusters_stream(conversation_text, cluster_map):
+            completed += 1
+            batch_payloads.append({"scores": result.scores})
+            yield "progress", {
+                "completed": completed,
+                "total": total_clusters,
+                "cluster_id": result.cluster_id,
+            }
+        full_facets = self.classifier._df.copy()
+        aggregator = OutputAggregator(full_facets)
+        resolved_id = conversation_id or f"eval-{abs(hash(conversation_text)) % 10**10}"
+        final = aggregator.aggregate(resolved_id, batch_payloads)
+        yield "complete", final.model_dump()
 
     def evaluate_sync(
         self,

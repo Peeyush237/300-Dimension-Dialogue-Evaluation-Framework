@@ -38,9 +38,9 @@ const demoScores = [
 ]
 
 const metrics = [
-  { label: 'Facets mapped', value: '399+' },
-  { label: 'Facets per call', value: '20-25' },
-  { label: 'Scale ready', value: '5k' },
+  { label: 'Facets mapped', value: '399' },
+  { label: 'Batch size', value: '20–25' },
+  { label: 'Scale ready', value: '5000+' },
 ]
 
 const pillars = [
@@ -57,6 +57,8 @@ const pillars = [
     description: 'Consistent evaluation language across product, safety, and research.',
   },
 ]
+
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '')
 
 const defaultConversation = `user: I need a faster way to evaluate conversations.
 assistant: We can cluster facets and score in batches.
@@ -76,6 +78,57 @@ async function readApiError(response) {
     return text || 'Request failed.'
   } catch {
     return text || 'Request failed.'
+  }
+}
+
+async function streamEvaluation(rawText, conversationId, onEvent) {
+  const response = await fetch(`${API_BASE}/evaluate/stream`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      conversation_id: conversationId,
+      raw_input: rawText,
+    }),
+  })
+  if (!response.ok) {
+    throw new Error(await readApiError(response))
+  }
+  if (!response.body) {
+    throw new Error('Streaming response not available.')
+  }
+  const reader = response.body.getReader()
+  const decoder = new TextDecoder()
+  let buffer = ''
+  while (true) {
+    const { value, done } = await reader.read()
+    if (done) {
+      break
+    }
+    buffer += decoder.decode(value, { stream: true })
+    const chunks = buffer.split('\n\n')
+    buffer = chunks.pop() || ''
+    for (const chunk of chunks) {
+      const lines = chunk.split('\n')
+      let eventName = 'message'
+      let data = ''
+      for (const line of lines) {
+        if (line.startsWith('event:')) {
+          eventName = line.replace('event:', '').trim()
+        } else if (line.startsWith('data:')) {
+          data += line.replace('data:', '').trim()
+        }
+      }
+      if (!data) {
+        continue
+      }
+      let payload
+      try {
+        payload = JSON.parse(data)
+      } catch {
+        payload = { detail: data }
+      }
+      onEvent(eventName, payload)
+    }
   }
 }
 
@@ -138,6 +191,7 @@ function buildCsv(rows) {
 function App() {
   const evaluateShellRef = useRef(null)
   const fileInputRef = useRef(null)
+  const streamResetRef = useRef(null)
   const [page, setPage] = useState('home')
   const [inputText, setInputText] = useState(defaultConversation)
   const [loadedFiles, setLoadedFiles] = useState([])
@@ -146,6 +200,7 @@ function App() {
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [streamState, setStreamState] = useState('idle')
   const [splitPercent, setSplitPercent] = useState(50)
   const [isDragging, setIsDragging] = useState(false)
 
@@ -169,7 +224,7 @@ function App() {
   }, [activeScores, scoredFacets])
 
   const evaluateRawInput = async (rawText, conversationId) => {
-    const response = await fetch('/evaluate', {
+    const response = await fetch(`${API_BASE}/evaluate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -195,15 +250,41 @@ function App() {
       return
     }
     setLoading(true)
+    setStreamState('running')
     try {
-      const data = await evaluateRawInput(
-        inputText,
-        inputPreview.conversationId || `ui-${Date.now()}`
-      )
-      setResult(data)
-      setActiveFileId(null)
+      const conversationId = inputPreview.conversationId || `ui-${Date.now()}`
+      let finalResult = null
+      await streamEvaluation(inputText, conversationId, (event, payload) => {
+        if (event === 'status') {
+          const stage = payload.stage || 'working'
+          const totalClusters = payload.total_clusters
+          if (stage === 'scoring' && totalClusters) {
+            setBatchProgress(`Scoring ${totalClusters} clusters...`)
+          } else {
+            setBatchProgress(`Status: ${stage}`)
+          }
+        } else if (event === 'progress') {
+          setBatchProgress(`Scored ${payload.completed}/${payload.total} clusters...`)
+        } else if (event === 'complete') {
+          finalResult = payload
+          setStreamState('complete')
+          if (streamResetRef.current) {
+            clearTimeout(streamResetRef.current)
+          }
+          streamResetRef.current = setTimeout(() => {
+            setStreamState('idle')
+          }, 5000)
+        } else if (event === 'error') {
+          throw new Error(payload.detail || 'Streaming evaluation failed.')
+        }
+      })
+      if (finalResult) {
+        setResult(finalResult)
+        setActiveFileId(null)
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unexpected error.')
+      setStreamState('idle')
     } finally {
       setLoading(false)
     }
@@ -372,8 +453,8 @@ function App() {
                   <span className="hero-title outline">EVALUATOR</span>
                 </h1>
                 <p className="hero-subtitle">
-                  Production-grade conversation scoring across 399+ facets. Structured evidence,
-                  confidence, and governance-ready outputs in minutes.
+                  Production-grade conversation scoring across 399 facets. Now with IDE-export
+                  JSON upload, async batch evaluation, and governance-ready evidence.
                 </p>
                 <div className="hero-actions">
                   <button className="primary" type="button" onClick={() => setPage('evaluate')}>
@@ -443,8 +524,8 @@ function App() {
               </div>
               <div className="gallery-card wide">
                 <span className="gallery-tag">#CASE_B</span>
-                <h3>24h coverage</h3>
-                <p>Async batch scoring scales to 5000 facets without redesign.</p>
+                <h3>IDE-export ready</h3>
+                <p>Upload JSON exports from your workflow and score conversations in batch.</p>
               </div>
               <div className="gallery-card">
                 <span className="gallery-tag">#CASE_C</span>
@@ -531,8 +612,8 @@ function App() {
                   </div>
                 </div>
                 <p className="input-help">
-                  Paste plain text (<code>role: message</code>) or JSON with turns/messages/conversation
-                  fields. Non-conversation input is rejected before scoring.
+                  Paste plain text (<code>role: message</code>) or upload JSON exports from other
+                  tools and IDE workflows. Non-conversation input is rejected before scoring.
                 </p>
                 <textarea
                   id="conversation"
@@ -585,6 +666,22 @@ function App() {
                   </div>
                 ) : null}
                 {batchProgress ? <div className="console-meta">{batchProgress}</div> : null}
+                {streamState !== 'idle' ? (
+                  <div className={`stream-status stream-${streamState}`}>
+                    {streamState === 'running' ? (
+                      <span className="stream-indicator">
+                        Streaming evaluation
+                        <span className="stream-dots" aria-hidden="true">
+                          <span />
+                          <span />
+                          <span />
+                        </span>
+                      </span>
+                    ) : (
+                      <span className="stream-complete">Evaluation complete</span>
+                    )}
+                  </div>
+                ) : null}
                 {error ? <div className="console-error">{error}</div> : null}
                 <div className="console-actions">
                   <button className="primary" type="button" onClick={handleEvaluate} disabled={loading}>
@@ -597,6 +694,12 @@ function App() {
                 <div className="console-meta">
                   <span>Pipeline: Groq Llama 3.1 8B</span>
                   <span>{displayResult ? 'Live results loaded' : 'Demo mode'}</span>
+                </div>
+                <div className="console-meta">
+                  <span>
+                    Demo run: evaluating only a few clusters to show the workflow. Full runs take
+                    longer and can hit Groq free-tier limits.
+                  </span>
                 </div>
               </div>
             </div>

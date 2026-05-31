@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import os
 import re
@@ -54,6 +55,8 @@ class ConversationValidator:
         self.timeout_seconds = timeout_seconds
         self.api_key = os.getenv("GROQ_API_KEY", "")
         self.use_llm_gate = os.getenv("CONVERSATION_LLM_GATE", "true").lower() != "false"
+        self.max_attempts = int(os.getenv("VALIDATION_MAX_ATTEMPTS", "4"))
+        self.request_delay = float(os.getenv("VALIDATION_REQUEST_DELAY_SECONDS", "0"))
         self.base_url = "https://api.groq.com/openai/v1"
 
     @staticmethod
@@ -174,14 +177,41 @@ class ConversationValidator:
         }
         timeout = httpx.Timeout(self.timeout_seconds)
         async with httpx.AsyncClient(base_url=self.base_url, timeout=timeout) as client:
-            response = await client.post("/chat/completions", headers=headers, json=payload)
-            response.raise_for_status()
+            if self.request_delay > 0:
+                await asyncio.sleep(self.request_delay)
+            response = await self._post_with_retry(client, headers, payload)
             data = response.json()
             content = data["choices"][0]["message"]["content"]
             parsed = _parse_json(content)
             valid = bool(parsed.get("valid"))
             reason = str(parsed.get("reason") or "LLM rejected the input.")
             return ValidationResult(valid, reason, "llm")
+
+    async def _post_with_retry(
+        self,
+        client: httpx.AsyncClient,
+        headers: Dict[str, str],
+        payload: Dict[str, Any],
+    ) -> httpx.Response:
+        backoff = 1.0
+        for attempt in range(self.max_attempts):
+            response = await client.post("/chat/completions", headers=headers, json=payload)
+            if response.status_code in {429, 500, 502, 503, 504}:
+                if attempt == self.max_attempts - 1:
+                    response.raise_for_status()
+                retry_after = response.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        await asyncio.sleep(float(retry_after))
+                    except ValueError:
+                        await asyncio.sleep(backoff)
+                else:
+                    await asyncio.sleep(backoff)
+                backoff *= 2
+                continue
+            response.raise_for_status()
+            return response
+        return response
 
     def ensure_valid(self, result: ValidationResult) -> None:
         if not result.valid:

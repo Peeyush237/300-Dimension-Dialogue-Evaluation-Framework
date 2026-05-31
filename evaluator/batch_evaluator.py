@@ -5,7 +5,7 @@ import json
 import os
 from pathlib import Path
 from dataclasses import dataclass
-from typing import Any, Dict, List
+from typing import Any, Dict, List, AsyncIterator
 
 import httpx
 
@@ -32,6 +32,7 @@ class BatchEvaluator:
         self.max_concurrent_requests = int(max_concurrent_requests or os.getenv("MAX_CONCURRENT_REQUESTS", 2))
         self.request_delay = float(os.getenv("REQUEST_DELAY_SECONDS", "0"))
         self.max_clusters_per_run = int(os.getenv("MAX_CLUSTERS_PER_RUN", "0"))
+        self.max_attempts = int(os.getenv("BATCH_MAX_ATTEMPTS", "4"))
         self.timeout_seconds = timeout_seconds
         self.api_key = os.getenv("GROQ_API_KEY", "")
         if not self.api_key:
@@ -67,6 +68,24 @@ class BatchEvaluator:
         ]
         return await asyncio.gather(*tasks)
 
+    async def evaluate_clusters_stream(
+        self, conversation_text: str, cluster_map: Dict[int, List[str]]
+    ) -> AsyncIterator[BatchResult]:
+        if self.max_clusters_per_run > 0:
+            cluster_items = list(cluster_map.items())[: self.max_clusters_per_run]
+        else:
+            cluster_items = list(cluster_map.items())
+        semaphore = asyncio.Semaphore(self.max_concurrent_requests)
+        tasks = [
+            asyncio.create_task(
+                self._evaluate_cluster(cluster_id, conversation_text, facets, semaphore)
+            )
+            for cluster_id, facets in cluster_items
+        ]
+        for task in asyncio.as_completed(tasks):
+            result = await task
+            yield result
+
     async def _evaluate_cluster(
         self,
         cluster_id: int,
@@ -96,13 +115,12 @@ class BatchEvaluator:
         client: httpx.AsyncClient,
         headers: Dict[str, str],
         payload: Dict[str, Any],
-        max_attempts: int = 4,
     ) -> httpx.Response:
         backoff = 1.0
-        for attempt in range(max_attempts):
+        for attempt in range(self.max_attempts):
             response = await client.post("/chat/completions", headers=headers, json=payload)
             if response.status_code in {429, 500, 502, 503, 504}:
-                if attempt == max_attempts - 1:
+                if attempt == self.max_attempts - 1:
                     response.raise_for_status()
                 retry_after = response.headers.get("Retry-After")
                 if retry_after:
@@ -121,7 +139,7 @@ class BatchEvaluator:
     def _build_payload(self, conversation_text: str, facets: List[str]) -> Dict[str, Any]:
         facets_list = "\n".join(f"- {facet}" for facet in facets)
         prompt = EVALUATOR_USER_PROMPT.format(conversation_text=conversation_text, facets_list=facets_list)
-        return {
+        payload = {
             "model": self.model_name,
             "temperature": 0.2,
             "messages": [
@@ -129,10 +147,24 @@ class BatchEvaluator:
                 {"role": "user", "content": prompt},
             ],
         }
+        if os.getenv("FORCE_JSON_MODE", "false").lower() == "true":
+            payload["response_format"] = {"type": "json_object"}
+        return payload
 
     @staticmethod
     def _parse_json(text: str) -> Dict[str, Any]:
+        cleaned = text.strip()
+        if cleaned.startswith("```"):
+            cleaned = cleaned.strip("`")
+            cleaned = cleaned.replace("json", "", 1).strip()
         try:
-            return json.loads(text)
-        except json.JSONDecodeError as exc:
-            raise ValueError("LLM response was not valid JSON.") from exc
+            return json.loads(cleaned)
+        except json.JSONDecodeError:
+            start = cleaned.find("{")
+            end = cleaned.rfind("}")
+            if start >= 0 and end > start:
+                try:
+                    return json.loads(cleaned[start : end + 1])
+                except json.JSONDecodeError as exc:
+                    raise ValueError("LLM response was not valid JSON.") from exc
+            raise ValueError("LLM response was not valid JSON.")
