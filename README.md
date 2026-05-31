@@ -61,6 +61,7 @@ docker compose down
 ## Why this scales to 5000 facets
 
 - Only scoreable facets are clustered. Unscoreable facets are never sent to the LLM.
+- Clusters are built with sentence-transformers (`all-MiniLM-L6-v2`, with TF-IDF fallback) and KMeans to keep semantically similar facets together.
 - Clustering groups roughly 20 to 25 facets per batch, keeping each request small and stable.
 - The number of clusters grows linearly with the number of facets, so capacity scales without redesign.
 - Rate control is handled through batch size, concurrency, and request delay settings.
